@@ -1,0 +1,231 @@
+/*-------Importante-------*/
+:root{
+    --Light-Blue: #7EBAFB;
+    --Ligt-Pink: #FB7E7E;
+    --Gray-Nigt: #14121C;
+    --Gray-Nigt-Input: rgba(20, 18, 28, 0.9);
+    --White: #FFFFFF;
+    --Black: #000000;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+/*-------Fin Importante-------*/
+
+/*-------Scroll Bar-------*/
+::-webkit-scrollbar { width: 6px; }
+
+::-webkit-scrollbar-track { background: var(--White);}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--Light-Blue);
+}
+/*-------Fin Scroll Bar-------*/
+
+/*-------Variables-------*/
+.titulo-blanco{
+    font-size: 24px;
+    color: var(--White);
+}
+
+.titulo-oscuro{
+    font-size: 24px;
+    color: var(--Gray-Nigt);
+}
+
+.parrafo{
+    font-size: 16px;
+}
+
+.span-azul{
+    color: var(--Light-Blue);
+}
+
+.span-rosa{
+    color: var(--Ligt-Pink);
+}
+
+.oscuro{
+    background: var(--Gray-Nigt);
+}
+
+.rosado{
+    background: var(--Ligt-Pink);
+}
+
+.azul{
+    background: var(--Light-Blue);
+}
+
+.blanco{
+    background: var(--White);
+}
+
+.tx-blanco{
+    color: var(--White);
+}
+
+.tx-oscuro{
+    color: var(--Gray-Nigt);
+}
+
+.tx-azul{
+    color: var(--Light-Blue);
+}
+
+.tx-rosado{
+    color: var(--Ligt-Pink);
+}
+/*-------Fin Variables-------*/
+
+/*-------Loader-------*/
+.carga{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: no-repeat var(--Gray-Nigt);
+    z-index: 99;
+}
+
+.carga img{
+    margin-top: 150px;
+    width: 300px;
+    height: 300px;
+    z-index: 99;
+}
+
+.page-loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .4s .2s ease-in-out;
+    transition: all .4s .2s ease-in-out;
+    background-color: var(--Gray-Nigt);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+  }
+
+.page-loading.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.page-loading-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    opacity: 0;
+}
+
+.page-loading.active > .page-loading-inner {
+    opacity: 1;
+}
+
+.page-loading-inner > span {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--White);
+}
+
+.page-spinner {
+    display: inline-block;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-bottom: .75rem;
+    vertical-align: text-bottom;
+    border: .15em solid var(--White);
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner .75s linear infinite;
+    animation: spinner .75s linear infinite;
+}
+
+  @-webkit-keyframes spinner {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spinner {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+/*-------Fin Loader-------*/
+
+/*-------Componentes-------*/
+/*Nav*/
+
+/*Fin Nav*/
+
+/*Footer*/
+.footer{
+    color: var(--White);
+}
+
+.logo-footer img{
+    width:  150px;
+    height: 150px;
+}
+
+.social-container{
+    display: flex;
+    height: 30px;
+}
+
+.social-link{
+    height: 100%;
+    width: 30px;
+    background-image: url(../img/iconos/github-icon.svg);
+    border: 1px solid var(--White);
+    border-radius: 6px;
+    background-size: 40%;
+    background-position: center;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+}
+
+footer .social-link:nth-of-type(2){
+    background-image: url(../img/iconos/instagram-icon.svg);
+}
+
+footer .social-link:nth-of-type(3){
+    background-image: url(../img/iconos/logo-google.svg);
+}
+/*Fin Footer*/
+/*-------Fin Componentes-------*/
+
+
+/*-------CSS Index-------*/
+/*-------Fin CSS Index-------*/
+
+/*-------CSS Cursos-------*/
+/*-------Fin CSS Cursos-------*/
+
+/*-------CSS Cursos Detalle-------*/
+/*-------Fin CSS Cursos Detalle-------*/
+
+/*-------CSS-------*/
+/*-------Fin-------*/
+
+/*-------CSS About-------*/
+/*-------Fin CSS About-------*/

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fin Meta Tags-->
+    <!--Descripcion-->
+    <title>ChillClass 📚 | Sobre Nosotros</title>
+    <link rel="shortcut icon" href="../assets/img/logo/Logo-colores.svg" type="image/x-icon">
+    <!--Fin Descripcion-->
+    <!--Links CSS-->
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <!--Fin Links CSS-->
+    <!--Links Bootstrap CSS-->
+    <link rel="stylesheet" href="../assets/libs/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--Fin Links Bootstrap CSS-->
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"/>
+    <!--Fin Google Fonts-->
+</head>
+<body>
+    <!--Loader-->
+    <div class="page-loading active">
+        <div class="page-loading-inner">
+          <div class="page-spinner"></div>
+          <span>Cargando...</span>
+        </div>
+      </div>
+    <!--Fin Loader-->
+
+    <!--Footer-->
+    <footer class="d-flex pt-5 pb-0 h-100 footer oscuro">
+        <div class="container align-self-center">
+          <div class="row mb-3">
+            <div class="col-lg-3 col-sm-6 my-4 logo-footer">
+              <img src="../assets/img/logo/Logo-colores.svg" alt="" />
+            </div>
+  
+            <!--Columna 1-->
+            <div class="col-lg-3 col-sm-6 my-4">
+              <h5 class="fw-bold mb-3">Home</h5>
+              <ul class="list-unstyled">
+                <li class="mb-1">
+                  <a href="" class="text-muted text-decoration-none">Sobre Nosotros</a>
+                </li>
+                <li class="mb-1">
+                  <a href="" class="text-muted text-decoration-none">Contactame</a>
+                </li>
+                <li class="mb-1">
+                  <a href="" class="text-muted text-decoration-none">Proyectos</a>
+                </li>
+                <li class="mb-1">
+                  <a href="" class="text-muted text-decoration-none">Evidencias</a>
+                </li>
+              </ul>
+            </div>
+            <!--Fin Columna 1-->
+  
+            <!--Columna 2-->
+            <div class="col-lg-3 col-sm-6 my-4">
+              <h5 class="fw-bold mb-3">Evidencias</h5>
+              <ul class="list-unstyled">
+                <li class="mb-1">
+                  <a href="" class="text-muted text-decoration-none">Ir a evidencias</a>
+                </li>
+              </ul>
+            </div>
+            <!--Fin Columna 2-->
+  
+            <!--Columna 3-->
+            <div class="col-lg-3 col-sm-6 my-4">
+              <h5 class="fw-bold mb-3">Contactame</h5>
+              <div class="social-container">
+                <a href="https//facebook.com" class="social-link"></a>
+                <a href="https://www.instagram.com/hader_renteria/"
+                  class="social-link"></a>
+                <a href="https://co.linkedin.com/in/hader-renteria-565119240"
+                  class="social-link"></a>
+              </div>
+            </div>
+            <!--Fin Columna 3-->
+          </div>
+        </div>
+    </footer>
+    <!--Fin Footer-->
+
+    <!--JavaScript-->
+    <!--Fin JavaScript-->
+    <!--Bootstrap JavaScript-->
+    <script src="../assets/libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Fin Bootstrap JavaScript-->
+
+    <!--Logica Loader-->
+    <script>
+        (function () {
+          window.onload = function () {
+            const preloader = document.querySelector(".page-loading");
+            preloader.classList.remove("active");
+            setTimeout(function () {
+              preloader.remove();
+            }, 1000);
+          };
+        })();
+    </script>
+    <!--Fin Logica Loader-->
+</body>
+</html>
