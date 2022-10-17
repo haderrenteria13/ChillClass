@@ -40,43 +40,58 @@
 }
 
 .span-azul{
-    color: var(--Light-Blue);
+    color: var(--Light-Blue) !important;
 }
 
-.span-rosa{
-    color: var(--Ligt-Pink);
+.span-rosado{
+    color: var(--Ligt-Pink) !important;
 }
 
 .oscuro{
-    background: var(--Gray-Nigt);
+    background: var(--Gray-Nigt) !important;
 }
 
 .rosado{
-    background: var(--Ligt-Pink);
+    background: var(--Ligt-Pink) !important;
 }
 
 .azul{
-    background: var(--Light-Blue);
+    background: var(--Light-Blue) !important;
 }
 
 .blanco{
-    background: var(--White);
+    background: var(--White) !important;
 }
 
 .tx-blanco{
-    color: var(--White);
+    color: var(--White) !important;
 }
 
 .tx-oscuro{
-    color: var(--Gray-Nigt);
+    color: var(--Gray-Nigt) !important;
 }
 
 .tx-azul{
-    color: var(--Light-Blue);
+    color: var(--Light-Blue) !important;
 }
 
 .tx-rosado{
-    color: var(--Ligt-Pink);
+    color: var(--Ligt-Pink) !important;
+}
+
+.btn-primary{
+    background: var(--Ligt-Pink) !important;
+    border: var(--Ligt-Pink) !important;
+}
+
+.btn-secondary{
+    background: var(--Light-Blue) !important;
+    border: var(--Light-Blue) !important;
+}
+
+.btn-dark{
+    background: var(--Gray-Nigt) !important;
+    border: var(--Gray-Nigt) !important;
 }
 /*-------Fin Variables-------*/
 
@@ -174,7 +189,24 @@
 
 /*-------Componentes-------*/
 /*Nav*/
+.menu li a{
+    transition: all 0.3s ease;
+    color: var(--Ligt-Pink);
+}
 
+.menu li a:hover{
+    color: var(--Light-Blue);
+}
+
+.menu-icono{
+    height: 20px;
+}
+
+.boton-nav{
+    background: var(--Ligt-Pink);
+    color: var(--Gray-Nigt);
+    transition: all 0.3s ease;
+}
 /*Fin Nav*/
 
 /*Footer*/
@@ -216,6 +248,64 @@ footer .social-link:nth-of-type(3){
 
 
 /*-------CSS Index-------*/
+/*Header*/
+.header-principal{
+    background: url(../img/imagenes/fondo.png) no-repeat;
+}
+
+.texto-principal{
+    font-size: 120px;
+    font-weight: 900;
+}
+/*Fin Header*/
+
+/*Section Como Funciona*/
+.step {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    color: var(--Ligt-Pink);
+}
+
+.step::after {
+    content: "";
+    border-right: 2px solid var(--White);
+    opacity: .1;
+    height: 90px;
+    position: absolute;
+    top: 34px;
+}
+
+/*Nuestro Equipo*/
+.img-speackers{
+    width: 260px;
+    border: 5px solid var(--Ligt-Pink);
+    border-radius: 20px;
+    transition: 0.35s ease;
+}
+
+.img-speackers:hover{
+    transform: scale(1.1);
+}
+
+.equipo-h5{
+    font-weight: 500;
+    color: var(--Ligt-Pink);
+    font-size: 21px;
+}
+
+.equipo-descricion{
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--Ligt-Pink);
+}
+
+.equipo-rol{
+    font-size: 12px;
+    color: var(--White);
+}
+/*Fin Nuestro Equipo*/
+/*Fin Section Como Funciona*/
 /*-------Fin CSS Index-------*/
 
 /*-------CSS Cursos-------*/
@@ -229,3 +319,22 @@ footer .social-link:nth-of-type(3){
 
 /*-------CSS About-------*/
 /*-------Fin CSS About-------*/
+
+/*-------CSS 404-------*/
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.img-cuatro{
+    animation: movimiento 2.5s linear infinite;
+}
+
+/*-------Fin CSS 404-------*/

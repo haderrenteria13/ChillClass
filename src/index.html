@@ -23,8 +23,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"/>
     <!--Fin Google Fonts-->
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--Fin Font Awesome-->
 </head>
-<body>
+<body class="oscuro">
     <!--Loader-->
     <div class="carga">
         <img src="../assets/img/logo/Logo-colores.svg" alt="" />
@@ -32,7 +35,7 @@
     <!--Fin Loader-->
 
     <!--Nav-->
-    <nav class="navbar oscuro shadow">
+    <nav class="navbar sticky-top navbar-expand-lg oscuro shadow justify-content-between">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="../assets/img/logo/Logo-colores.svg" alt="Bootstrap" width="85" height="85">
@@ -44,24 +47,252 @@
         <!--Fin Responsive Nav-->
           <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarNavAltMarkup">
             <ul class="navbar-nav menu text-center">
-                <li class="nav-item">
-                  <a class="nav-link fw-bold" aria-current="page" href="#"
-                    >Salas</a
-                  >
+              <li class="nav-item dropdown">
+                <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Salas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
                 </li>
-                <li class="nav-item-1">
-                  <a class="nav-link fw-bold" href="../src/cursos.html">Cursos</a>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cursos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
                 </li>
+
                 <li class="nav-item">
                   <a class="nav-link fw-bold" href="#">Sobre Nosotros</a>
                 </li>
               </ul>
-            <a class="btn fw-bold azul rounded" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Inicia Sesión</a>
-          </div>
+            </div>
+            <a href="" class="btn btn-primary fw-bold">Inicia Sesión</a>
         </div>
     </nav>
     <!--Fin Nav-->
 
+    <!--Header Principal-->
+    <header class="header-principal">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-6 d-flex">
+            <div class="content align-self-center">
+              <h1 class="texto-principal tx-oscuro">Hola!<img src="../assets/img/iconos/emoji-hello-apple.svg" alt=""></h1>
+              <p class="lead m-0 fw-bold tx-oscuro">Somos una Red para estudiar.</p>
+              <p class="lead fw-bold tx-oscuro">Registrate ahora!</p>
+              <a href="" class="btn mb-5 btn-secondary tx-oscuro fw-semibold">Registrate</a>
+              <a href="" class="btn mb-5 btn-secondary tx-oscuro fw-semibold">Ver Video<img src="../assets/img/iconos/play-video.svg" alt="" width="20px" height="15px"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex d-none d-sm-none d-md-block">
+            <div class="content mx-auto align-items-center">
+              <img src="../assets/img/imagenes/niño.png" loading="lazy" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <!--Fin Header Principal-->
+
+    <!--Informacion-->
+    <section class="py-4">
+      <div class="container">
+          <div class="row d-flex align-items-center justify-content-between">
+              <div class="col-lg-4 d-flex">
+                <i class="fas fa-video d-block rounded-circle tx-rosado p-3 shadow me-3"></i>
+                  <div class="header-sub-text ml-3">
+                      <h6 class="tx-rosado fw-600 m-0 p-0">Es Gratis</h6>
+                      <p class="tx-blanco fs-14 m-0 p-0">Enjoy a variety of fresh topics</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 d-flex">
+                  <i class="fa fa-users d-block rounded-circle tx-rosado p-3 shadow me-3"></i>
+                  <div class="header-sub-text ml-3">
+                      <h6 class="tx-rosado fw-600 m-0 p-0">Tu eliges</h6>
+                      <p class="tx-blanco fs-14 m-0 p-0">Puedes ser lo que quieras ser</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 d-flex">
+                  <i class="fas fa-clock d-block rounded-circle tx-rosado p-3 shadow me-3"></i>
+                  <div class="header-sub-text ml-3">
+                      <h6 class="tx-rosado fw-600 m-0 p-0">Tu decides</h6>
+                      <p class="tx-blanco fs-14 m-0 p-0">Learn on your schedule</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!--Informacion-->
+
+    <!--Seccion Cursos Recomendados-->
+    <section class="oscuro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <!--Titulo-->
+            <div class="section-title">
+              <h2 class="fw-bold mb-4 mt-3 titulo-2 tx-blanco">
+                Cursos <span class="span-azul">Recomendados</span>
+              </h2>
+            </div>
+            <!-- Fin Titulo-->
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
+                <a href="#">
+                    <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded-top" alt="">
+                </a>
+                <div class="card-body">
+                    <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Bootstrap v5</a>
+                    <p class="text-muted fs-14">
+                        <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                    </p>
+                    <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+                </div>
+                <div class="card-footer d-flex align-items-center">
+                    <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                    <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
+              <a href="#">
+                  <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded-top" alt="">
+              </a>
+              <div class="card-body">
+                  <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Bootstrap v5</a>
+                  <p class="text-muted fs-14">
+                      <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                  </p>
+                  <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+              </div>
+              <div class="card-footer d-flex align-items-center">
+                  <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                  <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
+            <a href="#">
+                <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded-top" alt="">
+            </a>
+            <div class="card-body">
+                <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Bootstrap v5</a>
+                <p class="text-muted fs-14">
+                    <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                </p>
+                <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+            </div>
+            <div class="card-footer d-flex align-items-center">
+                <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
+          <a href="#">
+              <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded-top" alt="">
+          </a>
+          <div class="card-body">
+              <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Bootstrap v5</a>
+              <p class="text-muted fs-14">
+                  <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+              </p>
+              <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+          </div>
+          <div class="card-footer d-flex align-items-center">
+              <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+              <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+          </div>
+      </div>
+      </div>
+    </div>
+    <div class="text-center mt-4 mb-4">
+      <a href="../src/cursos.html" class="btn btn-secondary fw-bold tx-oscuro">Ver todos los Cursos →</a>
+    </div>
+     </div>
+    </section>
+    <!--Fin Seccion Cursos Recomendados-->
+
+    <!--Section Como Funciona-->
+    <section class="shadow oscuro">
+      <div class="container align-self-center">
+        <div class="row d-flex align-items-center justify-content-between">
+
+          <div class="p-0 col-lg-6 d-flex justify-content-center align-items-center">
+            <div class="content">
+              <img src="../assets/img/imagenes/tu-dicides.png" loading="lazy" class="img-fluid"/>
+            </div>
+          </div>
+
+          <div class="p-0 col-lg-6 d-flex">
+            <div class="align-self-center my-5 px-4">
+              <h2 class="display-4 fw-bold mb-5 tx-blanco">
+                Es muy<br>sencillo<span class="span-rosado">.</span>
+              </h2>
+
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex mb-4">
+                  <p class="lead fw-bold d-flex step">1</p>
+                  <div class="ms-3">
+                    <p class="lead fw-bold tx-blanco">
+                      Crea tu cuenta.
+                    </p>
+                    <p class="tx-blanco">
+                      Es muy sencillo, solamente ingresa tu celular y listo.
+                    </p>
+                  </div>
+                </li>
+                <li class="d-flex mb-4">
+                  <p class="lead fw-bold d-flex step">2</p>
+                  <div class="ms-3">
+                    <p class="lead fw-bold tx-blanco">
+                      Encuentra lo que te fascina y elige tu curso.
+                    </p>
+                    <p class="tx-blanco">
+                      Selecciona el color que más te guste para tu tarjeta, la
+                      enviaremos a tu domicilio.
+                    </p>
+                  </div>
+                </li>
+                <li class="d-flex mb-4">
+                  <p class="lead fw-bold d-flex step">3</p>
+                  <div class="ms-3">
+                    <p class="lead fw-bold tx-blanco">
+                      Aprende haciendo.
+                    </p>
+                    <p class="tx-blanco">
+                      Inicia sesión en la app e ingresa el número de tarjeta.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fin Section Como Funciona-->
+    
     <!--Footer-->
     <footer class="d-flex pt-5 pb-0 h-100 footer oscuro">
         <div class="container align-self-center">

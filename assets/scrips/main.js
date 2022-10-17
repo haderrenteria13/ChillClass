@@ -1,85 +1,61 @@
 $(document).ready(function () {
-    if ($("#all-categories-fragment").hasClass("d-flex")) {
-        $("#btn-all-categories").addClass("btn-fragment-active");
-    }
+    $("#btn-content").click(function () {
+        $("#btn-content").addClass("btn-fragment-active");
+        $("#btn-description, #btn-reviews, #btn-transcript, #btn-faq").removeClass("btn-fragment-active");
 
-    if ($("#design-fragment").hasClass("d-flex")) {
-        $("#btn-design").addClass("btn-fragment-active");
-    }
+        $("#accordion").removeClass("d-none");
+        $("#accordion").addClass("d-block");
+        $("#accordion").css("animation", "fragment-fade 0.5s ease-in");
 
-    if ($("#javascript-fragment").hasClass("d-flex")) {
-        $("#btn-javascript").addClass("btn-fragment-active");
-    }
-
-    if ($("#web-development-fragment").hasClass("d-flex")) {
-        $("#btn-web-development").addClass("btn-fragment-active");
-    }
-
-    $("#btn-all-categories").click(function () {
-        $("#all-categories-fragment").css("animation", "fragment-fade 0.5s ease-in");
-
-        $("#all-categories-fragment").addClass("d-flex");
-        $("#btn-all-categories").addClass("btn-fragment-active");
-
-        $("#design-fragment, #javascript-fragment, #web-development-fragment").addClass("d-none");
-        $("#design-fragment, #javascript-fragment, #web-development-fragment").removeClass("d-flex");
-        $("#btn-design, #btn-javascript, #btn-web-development").removeClass("btn-fragment-active");
+        $("#description, #reviews, #transcript, #faq").removeClass("d-block");
+        $("#description, #reviews, #transcript, #faq").addClass("d-none");
     });
 
-    $("#btn-design").click(function () {
-        $("#design-fragment").css("animation", "fragment-fade 0.5s ease-in");
+    $("#btn-description").click(function () {
+        $("#btn-description").addClass("btn-fragment-active");
+        $("#btn-content, #btn-reviews, #btn-transcript, #btn-faq").removeClass("btn-fragment-active");
 
-        $("#design-fragment").addClass("d-flex");
-        $("#btn-design").addClass("btn-fragment-active");
+        $("#description").removeClass("d-none");
+        $("#description").addClass("d-block");
+        $("#description").css("animation", "fragment-fade 0.5s ease-in");
 
-        $("#all-categories-fragment, #javascript-fragment, #web-development-fragment").addClass("d-none");
-        $("#all-categories-fragment, #javascript-fragment, #web-development-fragment").removeClass("d-flex");
-        $("#btn-all-categories, #btn-javascript, #btn-web-development").removeClass("btn-fragment-active");
+        $("#accordion, #reviews, #transcript, #faq").removeClass("d-block");
+        $("#accordion, #reviews, #transcript, #faq").addClass("d-none");
     });
 
-    $("#btn-javascript").click(function () {
-        $("#javascript-fragment").css("animation", "fragment-fade 0.5s ease-in");
+    $("#btn-reviews").click(function () {
+        $("#btn-reviews").addClass("btn-fragment-active");
+        $("#btn-content, #btn-description, #btn-transcript, #btn-faq").removeClass("btn-fragment-active");
 
-        $("#javascript-fragment").addClass("d-flex");
-        $("#btn-javascript").addClass("btn-fragment-active");
+        $("#reviews").removeClass("d-none");
+        $("#reviews").addClass("d-block");
+        $("#reviews").css("animation", "fragment-fade 0.5s ease-in");
 
-        $("#all-categories-fragment, #design-fragment, #web-development-fragment").addClass("d-none");
-        $("#all-categories-fragment, #design-fragment, #web-development-fragment").removeClass("d-flex");
-        $("#btn-all-categories, #btn-design, #btn-web-development").removeClass("btn-fragment-active");
+        $("#accordion, #description, #transcript, #faq").removeClass("d-block");
+        $("#accordion, #description, #transcript, #faq").addClass("d-none");
     });
 
-    $("#btn-web-development").click(function () {
-        $("#web-development-fragment").css("animation", "fragment-fade 0.5s ease-in");
+    $("#btn-transcript").click(function () {
+        $("#btn-transcript").addClass("btn-fragment-active");
+        $("#btn-content, #btn-description, #btn-reviews, #btn-faq").removeClass("btn-fragment-active");
 
-        $("#web-development-fragment").addClass("d-flex");
-        $("#btn-web-development").addClass("btn-fragment-active");
+        $("#transcript").removeClass("d-none");
+        $("#transcript").addClass("d-block");
+        $("#transcript").css("animation", "fragment-fade 0.5s ease-in");
 
-        $("#all-categories-fragment, #design-fragment, #javascript-fragment").addClass("d-none");
-        $("#all-categories-fragment, #design-fragment, #javascript-fragment").removeClass("d-flex");
-        $("#btn-all-categories, #btn-design, #btn-javascript").removeClass("btn-fragment-active");
-    });
-});
-
-$(document).ready(function () {
-    $("#btn-category").click(function () {
-        $("#btn-category").addClass("fragment-active");
-        $("#category-instructors").css("animation", "fragment-fade 0.5s ease-out");
-        $("#category-instructors").addClass("d-block");
-        $("#category-instructors").removeClass("d-none");
-
-        $("#btn-list").removeClass("fragment-active");
-        $("#list-instructors").addClass("d-none");
-        $("#list-instructors").removeClass("d-block");
+        $("#accordion, #description, #reviews, #faq").removeClass("d-block");
+        $("#accordion, #description, #reviews, #faq").addClass("d-none");
     });
 
-    $("#btn-list").click(function () {
-        $("#btn-list").addClass("fragment-active");
-        $("#list-instructors").css("animation", "fragment-fade 0.5s ease-out");
-        $("#list-instructors").addClass("d-block");
-        $("#list-instructors").removeClass("d-none");
+    $("#btn-faq").click(function () {
+        $("#btn-faq").addClass("btn-fragment-active");
+        $("#btn-content, #btn-description, #btn-transcript, #btn-reviews").removeClass("btn-fragment-active");
 
-        $("#btn-category").removeClass("fragment-active");
-        $("#category-instructors").addClass("d-none");
-        $("#category-instructors").removeClass("d-block");
+        $("#faq").removeClass("d-none");
+        $("#faq").addClass("d-block");
+        $("#faq").css("animation", "fragment-fade 0.5s ease-in");
+
+        $("#accordion, #description, #reviews, #transcript").removeClass("d-block");
+        $("#accordion, #description, #reviews, #transcript").addClass("d-none");
     });
 });
