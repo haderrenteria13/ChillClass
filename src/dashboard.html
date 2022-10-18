@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fin Meta Tags-->
+    <!--Descripcion-->
+    <title>ChillClass 📚 | Dashboard</title>
+    <link rel="shortcut icon" href="../assets/img/logo/Logo-colores.svg" type="image/x-icon">
+    <!--Fin Descripcion-->
+    <!--Links CSS-->
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <!--Fin Links CSS-->
+    <!--Links Bootstrap CSS-->
+    <link rel="stylesheet" href="../assets/libs/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--Fin Links Bootstrap CSS-->
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"/>
+    <!--Fin Google Fonts-->
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--Fin Font Awesome-->
+</head>
+<body>
+    <!--Loader-->
+    <div class="page-loading active">
+        <div class="page-loading-inner">
+          <div class="page-spinner"></div>
+          <span>Cargando...</span>
+        </div>
+      </div>
+    <!--Fin Loader-->
+
+    <!--Dashboard-->
+    <div class="d-flex" id="content-wrapper">
+
+        <!-- Sidebar -->
+        <div class="d-flex flex-column flex-shrink-0 oscuro shadow">
+            <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+              <img src="../assets/img/logo/Logo-colores.svg" alt="" height="50">
+              <span class="visually-hidden">Icon-only</span>
+            </a>
+            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+              <li class="nav-item">
+                <a href="#" class="nav-link active py-3" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                  <i class="fa fa-home"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+                   <i class="fa fa-home tx-rosado"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link py-3 " title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
+                    <i class="fa fa-home tx-rosado"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+                    <i class="fa fa-home tx-rosado"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                  <svg class="bi" width="24" height="24" role="img" aria-label="Customers"><use xlink:href="#people-circle"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        <!-- Fin sidebar -->
+
+        <div class="w-100">
+
+         <!-- Navbar -->
+         <nav class="navbar sticky-top navbar-expand-lg navbar-light oscuro shadow">
+            <div class="container">
+    
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div class="position-relative" style="min-width: 300px">
+                    <input type="text" class="input-categorias shadow form-control pe-5" placeholder="Buscar cursos"/>
+                    <i class="text-nav fs-lg position-absolute top-50 end-0 translate-middle-y me-3"><img src="../assets/img/iconos/lupa.svg" alt="" class="w-50"/></i>
+                  </div>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item dropdown">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="">
+                            <i class="fa fa-calendar tx-blanco"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-bell tx-blanco m-3"></i>
+                        </a>
+                        <a class="nav-link tx-blanco dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                        </a>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Mi perfil</a>
+                      <a class="dropdown-item" href="#">Suscripciones</a>
+                      <a class="dropdown-item" href="#">Cerrar sesión</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Fin Navbar -->
+
+        <!-- Page Content -->
+        <div id="content" class="oscuro w-100">
+
+              <section class="oscuro py-3">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-9 col-md-8">
+                            <h1 class="fw-bold fs-3 mb-0 tx-blanco" >¡Hola <span class="span-rosado">hader</span>, continúa por donde lo habías dejado!</h1>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+
+              <section class="bg-mix py-3">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                          <div class="card h-100 oscuro rounded shadow">
+                            <a href="#">
+                                <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded-top" alt="" >
+                            </a>
+                            <div class="card-body">
+                              <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Bootstrap v5</a>
+                              <p class="text-muted fs-14">
+                                <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                              </p>
+                              <div class="d-flex justify-content-between">
+                                  <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+                                    <a href="" class="btn btn-primary">Continuar Lección <i class="fa fa-play fs-10"></i></a>
+                              </div>
+                              
+                            </div>
+                            <div class="card-footer d-flex align-items-center">
+                                <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                                <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card h-100 oscuro rounded shadow">
+                            <a href="#">
+                                <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded-top" alt="" >
+                            </a>
+                            <div class="card-body">
+                              <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Bootstrap v5</a>
+                              <p class="text-muted fs-14">
+                                <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                              </p>
+                              <div class="d-flex justify-content-between">
+                                  <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+                                    <a href="" class="btn btn-primary">Continuar Lección <i class="fa fa-play fs-10"></i></a>
+                              </div>
+                              
+                            </div>
+                            <div class="card-footer d-flex align-items-center">
+                                <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                                <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </section>
+
+              <section>
+                  <div class="container">
+                      <div class="row">
+                        <div class="row">
+                            <div class="col-lg-8">
+                              <!--Titulo-->
+                              <div class="section-title">
+                                <h2 class="fw-bold  mt-3 fs-5 tx-blanco">
+                                  Cursos <span class="span-azul">Recomendados</span>
+                                </h2>
+                              </div>
+                              <!-- Fin Titulo-->
+                            </div>
+                          </div>
+                          <div class="col-lg-8 my-3">
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                  <div class="card h-100 oscuro rounded shadow">
+                                    <a href="#">
+                                      <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded-top" alt="" >
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Bootstrap v5</a>
+                                        <p class="text-muted fs-14">
+                                          <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                                        </p>
+                                            <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center">
+                                        <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                                        <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100 oscuro rounded shadow">
+                                    <a href="#">
+                                      <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded-top" alt="" >
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Bootstrap v5</a>
+                                        <p class="text-muted fs-14">
+                                          <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                                        </p>
+                                            <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center">
+                                        <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                                        <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100 oscuro rounded shadow">
+                                    <a href="#">
+                                      <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded-top" alt="" >
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Bootstrap v5</a>
+                                        <p class="text-muted fs-14">
+                                          <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                                        </p>
+                                            <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center">
+                                        <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                                        <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100 oscuro rounded shadow">
+                                    <a href="#">
+                                      <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded-top" alt="" >
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Bootstrap v5</a>
+                                        <p class="text-muted fs-14">
+                                          <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                                        </p>
+                                            <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center">
+                                        <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                                        <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="col-lg-4 my-3">
+                            
+                          </div>
+                      </div>
+                  </div>
+              </section>
+
+        </div>
+
+        </div>
+    </div>
+    <!--Fin Dashboard-->
+
+    <!--JavaScript-->
+    <!--Fin JavaScript-->
+    <!--Bootstrap JavaScript-->
+    <script src="../assets/libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Fin Bootstrap JavaScript-->
+
+    <!--Logica Loader-->
+    <script>
+        (function () {
+          window.onload = function () {
+            const preloader = document.querySelector(".page-loading");
+            preloader.classList.remove("active");
+            setTimeout(function () {
+              preloader.remove();
+            }, 1000);
+          };
+        })();
+    </script>
+    <!--Fin Logica Loader-->
+</body>
+</html>

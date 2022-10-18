@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fin Meta Tags-->
+    <!--Descripcion-->
+    <title>ChillClass 📚 | Inicia Sesión</title>
+    <link rel="shortcut icon" href="../assets/img/logo/Logo-colores.svg" type="image/x-icon">
+    <!--Fin Descripcion-->
+    <!--Links CSS-->
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <!--Fin Links CSS-->
+    <!--Links Bootstrap CSS-->
+    <link rel="stylesheet" href="../assets/libs/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--Fin Links Bootstrap CSS-->
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"/>
+    <!--Fin Google Fonts-->
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--Fin Font Awesome-->
+</head>
+<body>
+    <!--Loader-->
+    <div class="page-loading active">
+        <div class="page-loading-inner">
+          <div class="page-spinner"></div>
+          <span>Cargando...</span>
+        </div>
+      </div>
+    <!--Fin Loader-->
+
+    <!--Login-->
+    <section>
+        <div class="row g-0">
+            <div class="col-lg-7 d-none d-lg-block">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item img-1 min-vh-100 active">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="font-weight-bold">La más potente del mercado</h5>
+                          <a class="text-muted text-decoration-none">Visita nuestra tienda</a>
+                        </div>
+                      </div>
+                      <div class="carousel-item img-2 min-vh-100">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="font-weight-bold">Descubre la nueva generación</h5>
+                          <a class="text-muted text-decoration-none">Visita nuestra tienda</a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+            <div class="col-lg-5 oscuro d-flex flex-column align-items-end min-vh-100">
+                <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 mb-auto w-100">
+                    <img src="../assets/img/logo/Logo-colores.svg" class="img-fluid" width="85" height="85"/>
+                </div>
+                <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+                <h1 class="fw-bold mb-4 tx-blanco fs-4">Bienvenido de vuelta</h1>
+                <form action="dashboard.html" autocomplete="off" class="mb-5">
+                    <div class="mb-4">
+                      <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
+                      <input autocomplete="off" required type="email" class="form-control bg-dark-x border-0" id="exampleInputEmail1" placeholder="Ingresa tu email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-4">
+                      <label for="exampleInputPassword1" class="form-label font-weight-bold">Contraseña</label>
+                      <input autocomplete="off" required type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu contraseña" id="exampleInputPassword1">
+                      <a href="" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+                  </form>
+
+                <p class="font-weight-bold text-center text-muted">O inicia sesión con</p>
+                <div class="d-flex justify-content-around">
+                    <button type="button" class="btn btn-outline-light flex-grow-1 mr-2"><i class="fab fa-google lead mr-2"></i> Google</button>
+                    <button type="button" class="btn btn-outline-light flex-grow-1 ml-2"><i class="fab fa-facebook-f lead mr-2"></i> Facebook</button>
+                </div>
+                </div>
+                <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 mt-auto w-100">
+                    <p class="d-inline-block mb-0">¿Todavia no tienes una cuenta?</p> <a href="" class="text-light font-weight-bold text-decoration-none">Crea una ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fin Login-->
+
+    <!--JavaScript-->
+    <!--Fin JavaScript-->
+    <!--Bootstrap JavaScript-->
+    <script src="../assets/libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Fin Bootstrap JavaScript-->
+
+    <!--Logica Loader-->
+    <script>
+        (function () {
+          window.onload = function () {
+            const preloader = document.querySelector(".page-loading");
+            preloader.classList.remove("active");
+            setTimeout(function () {
+              preloader.remove();
+            }, 1000);
+          };
+        })();
+    </script>
+    <!--Fin Logica Loader-->
+</body>
+</html>

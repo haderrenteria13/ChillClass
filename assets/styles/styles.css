@@ -93,6 +93,14 @@
     background: var(--Gray-Nigt) !important;
     border: var(--Gray-Nigt) !important;
 }
+
+.active{
+    background: var(--Light-Blue) !important;
+}
+
+.fs-10{
+    font-size: 10px;
+}
 /*-------Fin Variables-------*/
 
 /*-------Loader-------*/
@@ -124,7 +132,7 @@
     height: 100%;
     -webkit-transition: all .4s .2s ease-in-out;
     transition: all .4s .2s ease-in-out;
-    background-color: var(--Gray-Nigt);
+    background-color: var(--Gray-Nigt) !important;
     opacity: 0;
     visibility: hidden;
     z-index: 9999;
@@ -185,6 +193,7 @@
       transform: rotate(360deg);
     }
 }
+
 /*-------Fin Loader-------*/
 
 /*-------Componentes-------*/
