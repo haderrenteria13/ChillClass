@@ -323,8 +323,17 @@ footer .social-link:nth-of-type(3){
 /*-------CSS Cursos Detalle-------*/
 /*-------Fin CSS Cursos Detalle-------*/
 
-/*-------CSS-------*/
-/*-------Fin-------*/
+/*-------CSS Login-------*/
+.img-1{
+    background: url(../img/imagenes/Login/image1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2{
+    background-position: center;
+}
+/*-------Fin Login-------*/
 
 /*-------CSS About-------*/
 /*-------Fin CSS About-------*/
@@ -345,5 +354,4 @@ footer .social-link:nth-of-type(3){
 .img-cuatro{
     animation: movimiento 2.5s linear infinite;
 }
-
 /*-------Fin CSS 404-------*/
