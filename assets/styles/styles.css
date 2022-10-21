@@ -280,9 +280,9 @@ footer .social-link:nth-of-type(3){
     content: "";
     border-right: 2px solid var(--White);
     opacity: .1;
-    height: 90px;
+    height: 60px;
     position: absolute;
-    top: 34px;
+    top: 40px;
 }
 
 /*Nuestro Equipo*/
