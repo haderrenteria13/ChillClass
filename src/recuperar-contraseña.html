@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Fin Meta Tags-->
     <!--Descripcion-->
-    <title>ChillClass 📚 | Inicia Sesión</title>
+    <title>ChillClass 📚 | Recuperar Contraseña</title>
     <link rel="shortcut icon" href="../assets/img/logo/Logo-colores.svg" type="image/x-icon">
     <!--Fin Descripcion-->
     <!--Links CSS-->
@@ -34,7 +34,7 @@
           <div class="page-spinner"></div>
           <span>Cargando...</span>
         </div>
-      </div>
+    </div>
     <!--Fin Loader-->
 
     <!--Nav-->
@@ -44,54 +44,52 @@
               <img src="../assets/img/logo/Logo-colores.svg" alt="" class="d-inline-block align-text-top" width="85" height="85">
             </a>
             <span class="navbar-text tx-blanco">
-              ¿No tienes Cuenta? <a href="../src/login.html" class="tx-azul">Crea una</a>
+              ¿Ya tienes Cuenta? <a href="../src/login.html" class="tx-azul">Inicia Sesión</a>
             </span>
           </div>
     </nav>
     <!--Fin Nav-->
 
     <!--Login-->
-    <section class="m-5">
+    <section class="m-5"">
+      <!-- container -->
       <div class="container margin-login">
         <!-- row -->
         <div class="row justify-content-center align-items-center">
           <div class="col-12 col-md-6 col-lg-4 order-lg-1 order-2">
             <!-- img -->
-            <img src="../assets/images/svg-graphics/signin-g.svg" alt="" class="img-fluid">
+            <img src="" alt="" class="img-fluid">
           </div>
-          <!-- col -->
-          <div class="col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2">
-            <div class="mb-lg-9 mb-3">
-              <h1 class="mb-1 tx-blanco fw-bold">Inicie Sesión</h1>
-              <p class="text-muted">Bienvenido de nuevo a ChillClass! Ingrese su correo electrónico para comenzar.</p>
-            </div>
-  
-            <form action="dashboard.html">
-              <div class="row g-3">
-                <!-- row -->
-  
-                <div class="col-12">
-                  <!-- input -->
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
-                </div>
-                <div class="col-12">
-                  <!-- input -->
-                  <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña" required>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <!-- form check -->
-                  <div class="tx-blanco"> ¿Se te olvido la contraseña? <a href="../src/recuperar-contraseña.html" class="tx-azul">Restablecer</a></div>
-                </div>
-                <!-- btn -->
-                <div class="col-12 d-grid"> <button type="submit" class="btn btn-primary fw-bold">iniciar Sesión</button>
-                </div>
-                <!-- link -->
-                <div class="tx-blanco">¿No tienes Cuenta? <a href="../src/registrate.html" class="tx-azul"> Crea una</a></div>
+          <div class="col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2 order-1 d-flex align-items-center">
+            <div>
+              <div class="mb-lg-9 mb-3">
+                <!-- heading -->
+                <h1 class="mb-2 fw-bold tx-blanco">¿Olvidaste tu Contraseña?</h1>
+                <p>Ingrese la dirección de correo electrónico asociada con su cuenta y le enviaremos un enlace por correo electrónico para restablecer su contraseña.</p>
               </div>
-            </form>
+              <!-- form -->
+              <form>
+                <!-- row -->
+                <div class="row g-3">
+                 <!-- col -->
+                  <div class="col-12">
+                    <!-- input -->
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                  </div>
+  <!-- btn -->
+                  <div class="col-12 d-grid gap-2"> <button type="submit" class="btn btn-primary fw-bold">Nueva Contraseña</button>
+                    <a href="../src/login.html" class="btn btn-secondary tx-oscuro fw-bold">Salir</a>
+                  </div>
+  
+  
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
+  
+  
     </section>
     <!--Fin Login-->
 

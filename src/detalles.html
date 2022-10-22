@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Fin Meta Tags-->
     <!--Descripcion-->
-    <title>ChillClass 📚 | Sobre Nosotros</title>
+    <title>ChillClass 📚 | Curso Bootstrap</title>
     <link rel="shortcut icon" href="../assets/img/logo/Logo-colores.svg" type="image/x-icon">
     <!--Fin Descripcion-->
     <!--Links CSS-->
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../assets/styles/styles.css">
     <!--Fin Links CSS-->
     <!--Links Bootstrap CSS-->
-    <link rel="stylesheet" href="../assets/libs/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/libs/node_modules/bootstrap/dist/css/bootstrap.css">
     <!--Fin Links Bootstrap CSS-->
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -38,51 +38,50 @@
     <!--Fin Loader-->
 
     <!--Nav-->
-    <nav class="navbar navbar-expand-lg oscuro shadow justify-content-between">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="../assets/img/logo/Logo-colores.svg" alt="Bootstrap" width="85" height="85">
-        </a>
-      <!--Responsive Nav-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-      <!--Fin Responsive Nav-->
-        <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarNavAltMarkup">
-          <ul class="navbar-nav menu text-center">
-            <li class="nav-item dropdown">
-              <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Salas
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-              </li>
-
+    <nav class="navbar sticky-top navbar-expand-lg oscuro shadow justify-content-between">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/img/logo/Logo-colores.svg" alt="Bootstrap" width="85" height="85">
+          </a>
+        <!--Responsive Nav-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <!--Fin Responsive Nav-->
+          <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarNavAltMarkup">
+            <ul class="navbar-nav menu text-center">
               <li class="nav-item dropdown">
                 <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Cursos
+                  Foro
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Foros</a></li>
+                  <li><a class="dropdown-item" href="#">Categorias</a></li>
                 </ul>
-              </li>
+                </li>
 
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">Sobre Nosotros</a>
-              </li>
-            </ul>
-          </div>
-          <a href="" class="btn btn-primary fw-bold">Inicia Sesión</a>
-      </div>
+                <li class="nav-item dropdown">
+                  <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cursos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../src/cursos.html">Todos los Curso</a></li>
+                    <li><a class="dropdown-item" href="#">Escuelas</a></li>
+                    <li><a class="dropdown-item" href="#">Subir un Curso</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="../src/about.html">Sobre Nosotros</a>
+                </li>
+              </ul>
+            </div>
+            <a href="../src/login.html" class="btn btn-primary fw-bold">Inicia Sesión</a>
+        </div>
     </nav>
     <!--Fin Nav-->
 
-    <!---->
+    <!--Header Titulo-->
     <header class="rosado">
         <div class="container">
             <div class="row py-5">
@@ -102,575 +101,570 @@
             </div>
         </div>
     </header>
-    <!--Fin-->
+    <!--Fin Header Titulo-->
 
-    <!---->
+    <!--Detalles Curso-->
     <main>
         <div class="container">
             <div class="row align-items-start">
-                <div class="col-lg-7 mr-auto" style="margin-top: -55px;">
+            <!--1 Columna-->
+            <div class="col-lg-7 mr-auto me-5" style="margin-top: -55px;">
                     <div class="card oscuro rounded shadow">
                         <div class="card-body pt-2">
                             <section id="fragment">
                                 <ul class="nav border-bottom">
-                                    <li class="nav-item mr-4">
+                                    <li class="nav-item me-2">
                                         <button id="btn-content"
-                                            class="btn btn-fragment btn-fragment-active text-muted px-0 pb-3 rounded-0">
-                                            Content
+                                            class="btn btn-fragment btn-fragment-active tx-blanco fw-bold px-0 pb-3 rounded-0">
+                                            Contenido
                                         </button>
                                     </li>
-                                    <li class="nav-item mr-4">
+                                    <li class="nav-item me-2">
                                         <button id="btn-description"
-                                            class="btn btn-fragment text-muted px-0 pb-3 rounded-0">
-                                            Description
+                                            class="btn btn-fragment tx-blanco fw-bold px-0 pb-3 rounded-0">
+                                            Descripcion
                                         </button>
                                     </li>
-                                    <li class="nav-item mr-4">
+                                    <li class="nav-item me-2">
                                         <button id="btn-reviews"
-                                            class="btn btn-fragment text-muted px-0 pb-3 rounded-0">
+                                            class="btn btn-fragment tx-blanco fw-bold px-0 pb-3 rounded-0">
                                             Reviews
                                         </button>
                                     </li>
-                                    <li class="nav-item mr-4">
-                                        <button id="btn-transcript"
-                                            class="btn btn-fragment text-muted px-0 pb-3 rounded-0">
-                                            Transcript
-                                        </button>
-                                    </li>
                                     <li class="nav-item">
-                                        <button id="btn-faq" class="btn btn-fragment text-muted px-0 pb-3 rounded-0">
-                                            FAQ
+                                        <button id="btn-faq" class="btn btn-fragment tx-blanco fw-bold px-0 pb-3 rounded-0">
+                                            Preguntas
                                         </button>
                                     </li>
                                 </ul>
                             </section>
                             <div id="accordion" class="d-block">
                                 <a href="#accordion-1"
-                                    class="d-flex align-items-center text-dark border-bottom fs-16 py-3"
+                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Introduction JavaScript
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
                                 </a>
                                 <div class="collapse mt-3" id="accordion-1" data-parent="#accordion">
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fa fa-play fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Introduction
-                                        <span class="text-dark ml-auto">3m 11s</span>
+                                        <span class="tx-blanco ml-auto">3m 11s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fa fa-play fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Installing Development Software
-                                        <span class="text-dark ml-auto">2m 33s</span>
+                                        <span class="tx-blanco ml-auto">2m 33s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fa fa-play fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Hello World Project from GitHub
-                                        <span class="text-dark ml-auto">2m 15s</span>
+                                        <span class="tx-blanco ml-auto">2m 15s</span>
                                     </a>
                                 </div>
 
                                 <a href="#accordion-2"
-                                    class="d-flex align-items-center text-dark border-bottom fs-16 py-3"
+                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     JavaScript Beginning
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
                                 </a>
                                 <div class="collapse mt-3" id="accordion-2" data-parent="#accordion">
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fa fa-play fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Introduction
-                                        <span class="text-dark ml-auto">1m 41s</span>
+                                        <span class="tx-blanco ml-auto">1m 41s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fa fa-play fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Adding JavaScript Code to a Web Page
-                                        <span class="text-dark ml-auto">3m 39s</span>
+                                        <span class="tx-blanco ml-auto">3m 39s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fa fa-play fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Working with JavaScript Files
-                                        <span class="text-dark ml-auto">6m 18s</span>
+                                        <span class="tx-blanco ml-auto">6m 18s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fa fa-play fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Formatting Code
-                                        <span class="text-dark ml-auto">2m 18s</span>
+                                        <span class="tx-blanco ml-auto">2m 18s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fa fa-play fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Detecting and Fixing Errors
-                                        <span class="text-dark ml-auto">3m 14s</span>
+                                        <span class="tx-blanco ml-auto">3m 14s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fa fa-play fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Case Sensitivity
-                                        <span class="text-dark ml-auto">1m 48s</span>
+                                        <span class="tx-blanco ml-auto">1m 48s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fa fa-play fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Commeting Code
-                                        <span class="text-dark ml-auto">2m 24s</span>
+                                        <span class="tx-blanco ml-auto">2m 24s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fa fa-play fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Summary
-                                        <span class="text-dark ml-auto">2m 14s</span>
+                                        <span class="tx-blanco ml-auto">2m 14s</span>
                                     </a>
                                 </div>
 
                                 <a href="#accordion-3"
-                                    class="d-flex align-items-center text-dark border-bottom fs-16 py-3"
+                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Variables and Constants
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
                                 </a>
                                 <div class="collapse mt-3" id="accordion-3" data-parent="#accordion">
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Introduction
-                                        <span class="text-dark ml-auto">1m 19s</span>
+                                        <span class="tx-blanco ml-auto">1m 19s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         What is a Variable?
-                                        <span class="text-dark ml-auto">2m 11s</span>
+                                        <span class="tx-blanco ml-auto">2m 11s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Declaring Variables
-                                        <span class="text-dark ml-auto">2m 30s</span>
+                                        <span class="tx-blanco ml-auto">2m 30s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Using let to Declare Variables
-                                        <span class="text-dark ml-auto">3m 28s</span>
+                                        <span class="tx-blanco ml-auto">3m 28s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Naming Variables
-                                        <span class="text-dark ml-auto">3m 14s</span>
+                                        <span class="tx-blanco ml-auto">3m 14s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Common Errors Using Variables
-                                        <span class="text-dark ml-auto">3m 30s</span>
+                                        <span class="tx-blanco ml-auto">3m 30s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Changing Variable Values
-                                        <span class="text-dark ml-auto">2m 4s</span>
+                                        <span class="tx-blanco ml-auto">2m 4s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Constants
-                                        <span class="text-dark ml-auto">3m 15s</span>
+                                        <span class="tx-blanco ml-auto">3m 15s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         The var Keyword
-                                        <span class="text-dark ml-auto">2m 20s</span>
+                                        <span class="tx-blanco ml-auto">2m 20s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Summary
-                                        <span class="text-dark ml-auto">1m 49s</span>
+                                        <span class="tx-blanco ml-auto">1m 49s</span>
                                     </a>
                                 </div>
 
                                 <a href="#accordion-4"
-                                    class="d-flex align-items-center text-dark border-bottom fs-16 py-3"
+                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Types and Operators
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
                                 </a>
                                 <div class="collapse mt-3" id="accordion-4" data-parent="#accordion">
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Introduction
-                                        <span class="text-dark ml-auto">1m 55s</span>
+                                        <span class="tx-blanco ml-auto">1m 55s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Numbers
-                                        <span class="text-dark ml-auto">6m 14s</span>
+                                        <span class="tx-blanco ml-auto">6m 14s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Operator Precedence
-                                        <span class="text-dark ml-auto">2m 58s</span>
+                                        <span class="tx-blanco ml-auto">2m 58s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Navigate Numbers
-                                        <span class="text-dark ml-auto">1m 35s</span>
+                                        <span class="tx-blanco ml-auto">1m 35s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Strings
-                                        <span class="text-dark ml-auto">4m 7s</span>
+                                        <span class="tx-blanco ml-auto">4m 7s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Manupulating Strings
-                                        <span class="text-dark ml-auto">5m 8s</span>
+                                        <span class="tx-blanco ml-auto">5m 8s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Converting Strings and Numbers
-                                        <span class="text-dark ml-auto">2m 55s</span>
+                                        <span class="tx-blanco ml-auto">2m 55s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Boolean Variables
-                                        <span class="text-dark ml-auto">1m 39s</span>
+                                        <span class="tx-blanco ml-auto">1m 39s</span>
                                     </a>
                                 </div>
 
                                 <a href="#accordion-5"
-                                    class="d-flex align-items-center text-dark border-bottom fs-16 py-3"
+                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Program Flow
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
                                 </a>
                                 <div class="collapse mt-3" id="accordion-5" data-parent="#accordion">
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Introduction
-                                        <span class="text-dark ml-auto">1m 52s</span>
+                                        <span class="tx-blanco ml-auto">1m 52s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Clip Watched
-                                        <span class="text-dark ml-auto">4m 27s</span>
+                                        <span class="tx-blanco ml-auto">4m 27s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Conditionals Using if()
-                                        <span class="text-dark ml-auto">4m 25s</span>
+                                        <span class="tx-blanco ml-auto">4m 25s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Truthy Falsy
-                                        <span class="text-dark ml-auto">3m 30s</span>
+                                        <span class="tx-blanco ml-auto">3m 30s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         If ... else
-                                        <span class="text-dark ml-auto">3m 30s</span>
+                                        <span class="tx-blanco ml-auto">3m 30s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Comparing === and ==
-                                        <span class="text-dark ml-auto">1m 52s</span>
+                                        <span class="tx-blanco ml-auto">1m 52s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         The Ternary Operator
-                                        <span class="text-dark ml-auto">2m 47s</span>
+                                        <span class="tx-blanco ml-auto">2m 47s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Block Scope Using let
-                                        <span class="text-dark ml-auto">2m 21s</span>
+                                        <span class="tx-blanco ml-auto">2m 21s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Looping with for()
-                                        <span class="text-dark ml-auto">5m 30s</span>
+                                        <span class="tx-blanco ml-auto">5m 30s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Looping with do ... while()
-                                        <span class="text-dark ml-auto">1m 58s</span>
+                                        <span class="tx-blanco ml-auto">1m 58s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Summary
-                                        <span class="text-dark ml-auto">2m 21s</span>
+                                        <span class="tx-blanco ml-auto">2m 21s</span>
                                     </a>
                                 </div>
 
                                 <a href="#accordion-6"
-                                    class="d-flex align-items-center text-dark border-bottom fs-16 py-3"
+                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Functions
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
                                 </a>
                                 <div class="collapse mt-3" id="accordion-6" data-parent="#accordion">
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Introduction
-                                        <span class="text-dark ml-auto">1m 52s</span>
+                                        <span class="tx-blanco ml-auto">1m 52s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Function Basics
-                                        <span class="text-dark ml-auto">2m 46s</span>
+                                        <span class="tx-blanco ml-auto">2m 46s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Function Expressions
-                                        <span class="text-dark ml-auto">2m 32s</span>
+                                        <span class="tx-blanco ml-auto">2m 32s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Passing Information to Functions
-                                        <span class="text-dark ml-auto">3m 19s</span>
+                                        <span class="tx-blanco ml-auto">3m 19s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Function Return Values
-                                        <span class="text-dark ml-auto">3m 13s</span>
+                                        <span class="tx-blanco ml-auto">3m 13s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Function Scope
-                                        <span class="text-dark ml-auto">4m 20s</span>
+                                        <span class="tx-blanco ml-auto">4m 20s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Using Functions to Modify Web Pages
-                                        <span class="text-dark ml-auto">3m 42s</span>
+                                        <span class="tx-blanco ml-auto">3m 42s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Summary
-                                        <span class="text-dark ml-auto">2m 3s</span>
+                                        <span class="tx-blanco ml-auto">2m 3s</span>
                                     </a>
                                 </div>
 
                                 <a href="#accordion-7"
-                                    class="d-flex align-items-center text-dark border-bottom fs-16 py-3"
+                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Objects and the DOM
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
                                 </a>
                                 <div class="collapse mt-3" id="accordion-7" data-parent="#accordion">
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Introduction
-                                        <span class="text-dark ml-auto">1m 48s</span>
+                                        <span class="tx-blanco ml-auto">1m 48s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Object Properties
-                                        <span class="text-dark ml-auto">4m 28s</span>
+                                        <span class="tx-blanco ml-auto">4m 28s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Object Methods
-                                        <span class="text-dark ml-auto">3m 3s</span>
+                                        <span class="tx-blanco ml-auto">3m 3s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Passing Objects to Functions
-                                        <span class="text-dark ml-auto">3m 27s</span>
+                                        <span class="tx-blanco ml-auto">3m 27s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Standart Built-in Objects
-                                        <span class="text-dark ml-auto">6m 55s</span>
+                                        <span class="tx-blanco ml-auto">6m 55s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         The Document Object Model (DOM)
-                                        <span class="text-dark ml-auto">3m 29s</span>
+                                        <span class="tx-blanco ml-auto">3m 29s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Styling DOM Elements
-                                        <span class="text-dark ml-auto">2m 42s</span>
+                                        <span class="tx-blanco ml-auto">2m 42s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Detecting Button Clicks
-                                        <span class="text-dark ml-auto">2m 3s</span>
+                                        <span class="tx-blanco ml-auto">2m 3s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Showing and Hiding DOM Elements
-                                        <span class="text-dark ml-auto">4m 37s</span>
+                                        <span class="tx-blanco ml-auto">4m 37s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Summary
-                                        <span class="text-dark ml-auto">2m 47s</span>
+                                        <span class="tx-blanco ml-auto">2m 47s</span>
                                     </a>
                                 </div>
 
                                 <a href="#accordion-8"
-                                    class="d-flex align-items-center text-dark border-bottom fs-16 py-3"
+                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Arrays
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
                                 </a>
                                 <div class="collapse mt-3" id="accordion-8" data-parent="#accordion">
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Introduction
-                                        <span class="text-dark ml-auto">1m 48s</span>
+                                        <span class="tx-blanco ml-auto">1m 48s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Creating and Initializing Arrays
-                                        <span class="text-dark ml-auto">4m 7s</span>
+                                        <span class="tx-blanco ml-auto">4m 7s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Accessing Array Items
-                                        <span class="text-dark ml-auto">2m 4s</span>
+                                        <span class="tx-blanco ml-auto">2m 4s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Manipulating Arrays
-                                        <span class="text-dark ml-auto">4m 3s</span>
+                                        <span class="tx-blanco ml-auto">4m 3s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         slice() and splice()
-                                        <span class="text-dark ml-auto">5m 54s</span>
+                                        <span class="tx-blanco ml-auto">5m 54s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Array Searching and Looping
-                                        <span class="text-dark ml-auto">7m 32s</span>
+                                        <span class="tx-blanco ml-auto">7m 32s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Arrays in the DOM
-                                        <span class="text-dark ml-auto">4m 11s</span>
+                                        <span class="tx-blanco ml-auto">4m 11s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Summary
-                                        <span class="text-dark ml-auto">2m 28s</span>
+                                        <span class="tx-blanco ml-auto">2m 28s</span>
                                     </a>
                                 </div>
 
                                 <a href="#accordion-9"
-                                    class="d-flex align-items-center text-dark border-bottom fs-16 py-3"
+                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Scope and Hoisting
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
                                 </a>
                                 <div class="collapse mt-3" id="accordion-9" data-parent="#accordion">
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Introduction
-                                        <span class="text-dark ml-auto">1m 20s</span>
+                                        <span class="tx-blanco ml-auto">1m 20s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Global Scope
-                                        <span class="text-dark ml-auto">4m 7s</span>
+                                        <span class="tx-blanco ml-auto">4m 7s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Clip Watched
-                                        <span class="text-dark ml-auto">3m 14s</span>
+                                        <span class="tx-blanco ml-auto">3m 14s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Function Scope
-                                        <span class="text-dark ml-auto">3m 45s</span>
+                                        <span class="tx-blanco ml-auto">3m 45s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Var and Hoisting
-                                        <span class="text-dark ml-auto">2m 21s</span>
+                                        <span class="tx-blanco ml-auto">2m 21s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Undeclared Variables and Strict Mode
-                                        <span class="text-dark ml-auto">2m 16s</span>
+                                        <span class="tx-blanco ml-auto">2m 16s</span>
                                     </a>
-                                    <a href="#" class="d-flex align-items-center text-dark fw-400 pb-3">
+                                    <a href="#" class="d-flex align-items-center tx-blanco fw-400 pb-3">
                                         <i class="fas fa-lock fa-xs text-primary rounded-circle p-2 mr-3"
                                             style="background-color: #F5F4F8;"></i>
                                         Summary
-                                        <span class="text-dark ml-auto">1m 33s</span>
+                                        <span class="tx-blanco ml-auto">1m 33s</span>
                                     </a>
                                 </div>
 
-                                <a href="#accordion-10" class="d-flex align-items-center text-dark fs-16 pt-3"
+                                <a href="#accordion-10" class="d-flex align-items-center tx-blanco fs-16 pt-3"
                                     data-toggle="collapse">
                                     Summary
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
                                 </a>
                                 <div class="collapse" id="accordion-10" data-parent="#accordion">
-                                    <p class="text-dark py-3 fs-14">
+                                    <p class="tx-blanco py-3 fs-14">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse velit
                                         eos sunt
                                         ab inventore est tenetur blanditiis? Voluptas eius molestiae ad itaque tempora
@@ -683,7 +677,7 @@
                                 </div>
                             </div>
                             <div id="description" class="d-none">
-                                <h5 class="text-dark fw-500 mt-4">Course Descriptions</h5>
+                                <h5 class="tx-blanco fw-500 mt-4">Course Descriptions</h5>
                                 <p class="text-muted fs-14">
                                     If you’re learning to program for the first time, or if you’re coming from a
                                     different language, this course, JavaScript: Getting Started, will give you the
@@ -697,7 +691,7 @@
                                     JavaScript to create simple programs, create simple web applications, and modify web
                                     pages.
                                 </p>
-                                <h6 class="text-dark fw-500">What you'll learn</h6>
+                                <h6 class="tx-blanco fw-500">What you'll learn</h6>
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div id="check-1" class="d-flex mb-3">
@@ -758,7 +752,7 @@
                             </div>
                             <div id="reviews" class="d-none">
                                 <div class="d-flex align-items-center my-4">
-                                    <h5 class="text-dark fw-500">Reviews</h5>
+                                    <h5 class="tx-blanco fw-500">Reviews</h5>
                                     <div class="input-group w-50 ml-auto">
                                         <div class="input-group-prepend">
                                             <button class="btn btn-primary">
@@ -772,10 +766,10 @@
                                     <img src="../../img/users/avatar-2.jpg" class="rounded-circle" width="56">
                                     <div class="ml-3">
                                         <div class="d-flex">
-                                            <h6 class="text-dark fw-500">Max Hawkins</h6>
-                                            <span class="text-muted fs-12 ml-2">2 Days ago</span>
+                                            <h6 class="tx-blanco fw-500">Max Hawkins</h6>
+                                            <span class="text-muted ml-2">2 Days ago</span>
                                         </div>
-                                        <p class="fs-12">
+                                        <p>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
@@ -802,10 +796,10 @@
                                     <img src="../../img/users/avatar-3.jpg" class="rounded-circle" width="56">
                                     <div class="ml-3">
                                         <div class="d-flex">
-                                            <h6 class="text-dark fw-500">Arthur Williamson</h6>
-                                            <span class="text-muted fs-12 ml-2">3 Days ago</span>
+                                            <h6 class="tx-blanco fw-500">Arthur Williamson</h6>
+                                            <span class="text-muted ml-2">3 Days ago</span>
                                         </div>
-                                        <p class="fs-12">
+                                        <p>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
@@ -832,10 +826,10 @@
                                     <img src="../../img/users/avatar-4.jpg" class="rounded-circle" width="56">
                                     <div class="ml-3">
                                         <div class="d-flex">
-                                            <h6 class="text-dark fw-500">Claire Jones</h6>
-                                            <span class="text-muted fs-12 ml-2">4 Days ago</span>
+                                            <h6 class="tx-blanco fw-500">Claire Jones</h6>
+                                            <span class="text-muted ml-2">4 Days ago</span>
                                         </div>
-                                        <p class="fs-12">
+                                        <p>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
@@ -863,10 +857,10 @@
                                     <img src="../../img/users/avatar-5.jpg" class="rounded-circle" width="56">
                                     <div class="ml-3">
                                         <div class="d-flex">
-                                            <h6 class="text-dark fw-500">Bessie Pena</h6>
-                                            <span class="text-muted fs-12 ml-2">5 Days ago</span>
+                                            <h6 class="tx-blanco fw-500">Bessie Pena</h6>
+                                            <span class="text-muted ml-2">5 Days ago</span>
                                         </div>
-                                        <p class="fs-12">
+                                        <p>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
                                             <i class="fa fa-star fa-xs" style="color: orange;"></i>
@@ -888,10 +882,10 @@
                                 </div>
                             </div>
                             <div id="transcript" class="d-none">
-                                <h5 class="text-dark fw-500 my-4">
+                                <h5 class="tx-blanco fw-500 my-4">
                                     Transcript from the "Introduction" Lesson
                                 </h5>
-                                <h6 class="text-dark fw-500">
+                                <h6 class="tx-blanco fw-500">
                                     Course Overview <span class="text-muted">[00:00:00]</span>
                                 </h6>
                                 <p class="text-muted fs-14">
@@ -899,7 +893,7 @@
                                     lot of different things. Everything from dev roll to writing content to writing
                                     code. And I used to work as an architect at IBM. I live in Portland, Oregon.
                                 </p>
-                                <h6 class="text-dark fw-500">
+                                <h6 class="tx-blanco fw-500">
                                     Introduction <span class="text-muted">[00:00:16]</span>
                                 </h6>
                                 <p class="text-muted fs-14">
@@ -908,7 +902,7 @@
                                     into what GraphQL is or the language specifics. We're also gonna get into MDX. MDX
                                     is a way to write React components in your markdown.
                                 </p>
-                                <h6 class="text-dark fw-500">
+                                <h6 class="tx-blanco fw-500">
                                     Why Take This Course? <span class="text-muted">[00:00:37]</span>
                                 </h6>
                                 <p class="text-muted fs-14">
@@ -917,7 +911,7 @@
                                     into what GraphQL is or the language specifics. We're also gonna get into MDX. MDX
                                     is a way to write React components in your markdown.
                                 </p>
-                                <h6 class="text-dark fw-500">
+                                <h6 class="tx-blanco fw-500">
                                     A Look at the Demo Application <span class="text-muted">[00:00:54]</span>
                                 </h6>
                                 <p class="text-muted fs-14">
@@ -932,7 +926,7 @@
                                     into what GraphQL is or the language specifics. We're also gonna get into MDX. MDX
                                     is a way to write React components in your markdown.
                                 </p>
-                                <h6 class="text-dark fw-500">
+                                <h6 class="tx-blanco fw-500">
                                     Summary <span class="text-muted">[00:01:31]</span>
                                 </h6>
                                 <p class="text-muted fs-14">
@@ -943,10 +937,10 @@
                                 </p>
                             </div>
                             <div id="faq" class="d-none">
-                                <h5 class="text-dark fw-500 my-4">
+                                <h5 class="tx-blanco fw-500 my-4">
                                     Course - Frequently Asked Questions
                                 </h5>
-                                <h6 class="text-dark fw-500">
+                                <h6 class="tx-blanco fw-500">
                                     How this course help me to design layout?
                                 </h6>
                                 <p class="text-muted fs-14">
@@ -954,7 +948,7 @@
                                     lot of different things. Everything from dev roll to writing content to writing
                                     code. And I used to work as an architect at IBM. I live in Portland, Oregon.
                                 </p>
-                                <h6 class="text-dark fw-500">
+                                <h6 class="tx-blanco fw-500">
                                     What is important of this course?
                                 </h6>
                                 <p class="text-muted fs-14">
@@ -963,7 +957,7 @@
                                     into what GraphQL is or the language specifics. We're also gonna get into MDX. MDX
                                     is a way to write React components in your markdown.
                                 </p>
-                                <h6 class="text-dark fw-500">
+                                <h6 class="tx-blanco fw-500">
                                     Why Take This Course?
                                 </h6>
                                 <p class="text-muted fs-14">
@@ -972,7 +966,7 @@
                                     into what GraphQL is or the language specifics. We're also gonna get into MDX. MDX
                                     is a way to write React components in your markdown.
                                 </p>
-                                <h6 class="text-dark fw-500">
+                                <h6 class="tx-blanco fw-500">
                                     Is able to create application after this course?
                                 </h6>
                                 <p class="text-muted fs-14">
@@ -990,199 +984,146 @@
                             </div>
                         </div>
                     </div>
-                </div>
+            </div>
+            <!--Fin 1 Columna-->
 
-                <div class="col-lg-4 ml-auto" id="javascript-video" style="margin-top: -180px;">
-                    <div class="card oscuro shadow rounded mb-4">
+            <!--2 Columna-->
+            <div class="col-lg-4 ml-auto ms-3" style="margin-top: -180px;">
+                    <!--Card Producto-->
+                    <div class="card oscuro shadow rounded mb-4 h-100">
                         <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded p-1">
                         <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <h4 class="card-title mr-2">$600</h4>
-                                <del class="text-muted">750$</del>
-                            </div>
-                            <a href="#" class="btn btn-primary d-block py-3 px-4 my-2">Start Free Month</a>
-                            <a href="#" class="btn btn-outline-primary d-block py-3 px-4">Get Full Access</a>
+                            <a href="#" class="btn btn-primary d-block py-3 px-4 my-2 fw-bold">Iniciar Curso</a>
+                            <a href="#" class="btn btn-secondary d-block py-3 px-4 fw-bold tx-oscuro">Mas Cursos</a>
                         </div>
                     </div>
+                    <!--Fin Card Producto-->
                     <div class="card oscuro shadow rounded mb-4">
-                    <div class="card oscuro rounded shadow">
                         <div class="card-header d-flex align-items-center">
-                            <img src="../../img/users/avatar-1.jpg" class="rounded-circle" width="84" alt="">
+                            <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="70" alt="">
                             <div class="ml-3">
-                                <h6 class="text-dark fw-500 m-0 p-0">Jenny Wilson</h6>
-                                <p class="text-muted fs-12 m-0 p-0 mb-2">Front-end Developer, Designer</p>
-                                <div class="d-flex align-items-center fs-12">
-                                    <span style="color: orange;">4.5</span>
-                                    <i class="fa fa-star fa-xs" style="color: orange;"></i>
-                                    <span class="text-muted ml-2">
-                                        Instructor Rating
-                                    </span>
+                                <h6 class="tx-blanco fw-bold m-0 p-0">Hader Renteria</h6>
+                                <p class="text-muted m-0 p-0 mb-2">Front-end Developer, Diseñador</p>
+                                <div class="d-flex align-items-center ">
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="row align-items-center border-bottom">
-                                <div class="col-4 border-right pb-3">
-                                    <span class="text-dark fs-14 fw-500">11,604</span>
-                                    <br>
-                                    <span class="text-muted fs-14">Students</span>
-                                </div>
-                                <div class="col-4 border-right pb-3">
-                                    <span class="text-dark fs-14 fw-500">32</span>
-                                    <br>
-                                    <span class="text-muted fs-14">Courses</span>
-                                </div>
-                                <div class="col-4 pb-3">
-                                    <span class="text-dark fs-14 fw-500">12,230</span>
-                                    <br>
-                                    <span class="text-muted fs-14">Reviews</span>
-                                </div>
-                            </div>
                             <p class="card-text text-muted fs-14 ">
-                                I am an Innovation designer focussing on UX/UI based in Berlin. As a creative resident
-                                at Figma explored the city of the future and how new technologies.
+                                Soy un estudiante de grado 10, Hace unos años empecé a adquirir conocimiento en diseño de marca y creación de contenido audiovisual como un hobby. En el presente año vengo aprendiendo desarrollo web en la institución educativa asamblea departamental en convenio con el SENA. Me gustaria en un futuro tener un titulo.
                             </p>
-                        </div>
                     </div>
                 </div>
             </div>
-            <section class="my-5" id="recommended">
-                <h4 class="text-dark fw-500 mb-4">Related Courses</h4>
-                <div class="row card-course">
+            <!--Fin 2 Columna-->
+
+            <!--Linea-->
+            <div class="container">
+            <hr>
+            </div>
+            <!--Linea-->
+
+            <!--Section Recomendados-->
+            <section class="oscuro">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <!--Titulo-->
+                      <div class="section-title">
+                        <h2 class="fw-bold mb-4 mt-3 titulo-2 tx-blanco">
+                          Cursos <span class="span-rosado">Recomendados</span>
+                        </h2>
+                      </div>
+                      <!-- Fin Titulo-->
+                    </div>
+                  </div>
+          
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card rounded shadow mb-4 mb-lg-0">
+                        <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
                             <a href="#">
-                                <img src="../../img/main/course-react.jpg" class="card-img-top rounded-top" alt="">
+                                <img src="../assets/img/imagenes/Cursos/course-python.jpg" class="card-img-top rounded-top" alt="">
                             </a>
                             <div class="card-body">
-                                <a href="#" class="text-dark card-title d-block fs-16">
-                                    How to easily create a website with React
-                                </a>
+                                <a href="#" class="tx-blanco card-title d-block fs-16">Curso Practico de Python</a>
                                 <p class="text-muted fs-14">
-                                    <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;<i
-                                        class="fas fa-signal fa-sm text-primary"></i>&nbsp;<span
-                                        class="text-primary">Beginner</span>
+                                    <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
                                 </p>
-                                <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0"
-                                    style="color: orange !important;">
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    4.5&nbsp;<span class="text-muted"><small>(7,700)</small></span>
-                                </p>
+                                <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
                             </div>
                             <div class="card-footer d-flex align-items-center">
-                                <img src="../../img/users/avatar-1.jpg" class="rounded-circle" width="24" alt="">
-                                <span class="text-muted fs-14 ml-2">Morris Mccoy</span>
-                                <a href="#" class="text-muted ml-auto" data-toggle="tooltip" title="Add Bookmark"><i
-                                        class="fa fa-bookmark fa-sm"></i></a>
+                                <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                                <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card rounded shadow mb-4 mb-lg-0">
-                            <a href="#">
-                                <img src="../../img/main/course-graphql.jpg" class="card-img-top rounded-top" alt="">
-                            </a>
-                            <div class="card-body">
-                                <a href="#" class="text-dark card-title d-block fs-16">
-                                    GraphQL: introduction to graphQL for beginners
-                                </a>
-                                <p class="text-muted fs-14">
-                                    <i class="fas fa-clock"></i>&nbsp;2h 46m&nbsp;&nbsp;<i
-                                        class="fas fa-signal fa-sm text-primary"></i>&nbsp;<span
-                                        class="text-primary">Advance</span>
-                                </p>
-                                <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0"
-                                    style="color: orange !important;">
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    4.5&nbsp;<span class="text-muted"><small>(9,300)</small></span>
-                                </p>
-                            </div>
-                            <div class="card-footer d-flex align-items-center">
-                                <img src="../../img/users/avatar-2.jpg" class="rounded-circle" width="24" alt="">
-                                <span class="text-muted fs-14 ml-2">Ted Hawkins</span>
-                                <a href="#" class="text-muted ml-auto" data-toggle="tooltip" title="Add Bookmark"><i
-                                        class="fa fa-bookmark fa-sm"></i></a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card rounded shadow mb-4 mb-lg-0">
-                            <a href="#">
-                                <img src="../../img/main/course-angular.jpg" class="card-img-top rounded-top" alt="">
-                            </a>
-                            <div class="card-body">
-                                <a href="#" class="text-dark card-title d-block fs-16">
-                                    Angular - The complete guide for beginner
-                                </a>
-                                <p class="text-muted fs-14">
-                                    <i class="fas fa-clock"></i>&nbsp;1h 30m&nbsp;&nbsp;<i
-                                        class="fas fa-signal fa-sm text-primary"></i>&nbsp;<span
-                                        class="text-primary">Beginner</span>
-                                </p>
-                                <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0"
-                                    style="color: orange !important;">
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    4.5&nbsp;<span class="text-muted"><small>(8,890)</small></span>
-                                </p>
-                            </div>
-                            <div class="card-footer d-flex align-items-center">
-                                <img src="../../img/users/avatar-3.jpg" class="rounded-circle" width="24" alt="">
-                                <span class="text-muted fs-14 ml-2">Junita Bell</span>
-                                <a href="#" class="text-muted ml-auto" data-toggle="tooltip" title="Add Bookmark"><i
-                                        class="fa fa-bookmark fa-sm"></i></a>
-                            </div>
+          
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
+                        <a href="#">
+                            <img src="../assets/img/imagenes/Cursos/course-angular.jpg" class="card-img-top rounded-top" alt="">
+                        </a>
+                        <div class="card-body">
+                            <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Angular</a>
+                            <p class="text-muted fs-14">
+                                <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                            </p>
+                            <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card rounded shadow mb-4 mb-lg-0">
-                            <a href="#">
-                                <img src="../../img/main/course-python.jpg" class="card-img-top rounded-top" alt="">
-                            </a>
-                            <div class="card-body">
-                                <a href="#" class="text-dark card-title d-block fs-16">
-                                    The Python Course: build web application
-                                </a>
-                                <p class="text-muted fs-14">
-                                    <i class="fas fa-clock"></i>&nbsp;2h 30m&nbsp;&nbsp;<i
-                                        class="fas fa-signal fa-sm text-primary"></i>&nbsp;<span
-                                        class="text-primary">Intermediate</span>
-                                </p>
-                                <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0"
-                                    style="color: orange !important;">
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    <i class="fas fa-star mr-1 fa-xs"></i>
-                                    4.5&nbsp;<span class="text-muted"><small>(13,245)</small></span>
-                                </p>
-                            </div>
-                            <div class="card-footer d-flex align-items-center">
-                                <img src="../../img/users/avatar-4.jpg" class="rounded-circle" width="24" alt="">
-                                <span class="text-muted fs-14 ml-2">Claire
-                                    Robertson</span>
-                                <a href="#" class="text-muted ml-auto" data-toggle="tooltip" title="Add Bookmark"><i
-                                        class="fa fa-bookmark fa-sm"></i></a>
-                            </div>
+                        <div class="card-footer d-flex align-items-center">
+                            <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                            <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
                         </div>
                     </div>
                 </div>
+          
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
+                        <a href="#">
+                            <img src="../assets/img/imagenes/Cursos/course-react.jpg" class="card-img-top rounded-top" alt="">
+                        </a>
+                        <div class="card-body">
+                            <a href="#" class="tx-blanco card-title d-block fs-16">Curso de Incio de React</a>
+                            <p class="text-muted fs-14">
+                                <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                            </p>
+                            <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center">
+                            <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                            <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                        </div>
+                    </div>
+                </div>
+          
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
+                        <a href="#">
+                            <img src="../assets/img/imagenes/Cursos/course-node.jpg" class="card-img-top rounded-top" alt="">
+                        </a>
+                        <div class="card-body">
+                            <a href="#" class="tx-blanco card-title d-block fs-16">Curso Avanzado de Node JS</a>
+                            <p class="text-muted fs-14">
+                                <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
+                            </p>
+                            <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center">
+                            <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
+                            <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="text-center mt-4 mb-4">
+                <a href="../src/cursos.html" class="btn btn-primary fw-bold tx-oscuro">Ver todos los Cursos →</a>
+              </div>
+               </div>
             </section>
+            <!--Section Recomendados-->
         </div>
     </main>
-    <!--Fin-->
+    <!--Fin Detalle Curso-->
 
     <!--Footer-->
     <footer class="d-flex pt-5 pb-0 h-100 footer oscuro">
@@ -1200,24 +1141,22 @@
                   <a href="" class="text-muted text-decoration-none">Sobre Nosotros</a>
                 </li>
                 <li class="mb-1">
-                  <a href="" class="text-muted text-decoration-none">Contactame</a>
+                  <a href="" class="text-muted text-decoration-none">Contactanos</a>
                 </li>
                 <li class="mb-1">
-                  <a href="" class="text-muted text-decoration-none">Proyectos</a>
+                  <a href="" class="text-muted text-decoration-none">Sobre el Proyecto</a>
                 </li>
-                <li class="mb-1">
-                  <a href="" class="text-muted text-decoration-none">Evidencias</a>
-                </li>
+                
               </ul>
             </div>
             <!--Fin Columna 1-->
   
             <!--Columna 2-->
             <div class="col-lg-3 col-sm-6 my-4">
-              <h5 class="fw-bold mb-3">Evidencias</h5>
+              <h5 class="fw-bold mb-3">Documentación</h5>
               <ul class="list-unstyled">
                 <li class="mb-1">
-                  <a href="" class="text-muted text-decoration-none">Ir a evidencias</a>
+                  <a href="https://docs.google.com/document/d/1sqLwSy_Q5eLTpqxP39eaf5vfEv-BDRwEl8VjLPTVrk0/edit?usp=sharing" class="text-muted text-decoration-none">Ir a Documentación</a>
                 </li>
               </ul>
             </div>
@@ -1225,12 +1164,12 @@
   
             <!--Columna 3-->
             <div class="col-lg-3 col-sm-6 my-4">
-              <h5 class="fw-bold mb-3">Contactame</h5>
+              <h5 class="fw-bold mb-3">Contactanos</h5>
               <div class="social-container">
-                <a href="https//facebook.com" class="social-link"></a>
+                <a href="https://github.com/haderrenteria13/ChillClass" class="social-link"></a>
                 <a href="https://www.instagram.com/hader_renteria/"
                   class="social-link"></a>
-                <a href="https://co.linkedin.com/in/hader-renteria-565119240"
+                <a href="mailto:chillclass3@gmail.com"
                   class="social-link"></a>
               </div>
             </div>
@@ -1245,7 +1184,7 @@
     <script src="../assets/scrips/main.js"></script>
     <!--Fin JavaScript-->
     <!--Bootstrap JavaScript-->
-    <script src="../assets/libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <!--Fin Bootstrap JavaScript-->
 
     <!--Logica Loader-->
