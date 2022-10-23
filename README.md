@@ -35,7 +35,7 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 * **Hader Renteria** - *Frontend Developer* - [Hader Renteria](https://github.com/haderrenteria13)
 * **Juan J. Diaz** - *Backend Developer* - [Juan J.Diaz](https://github.com/haderrenteria13)
-* **Juan Pablo Galviz** - *Diseñador* - [Juan Pablo Galviz](https://github.com/haderrenteria13)
+* **Juan Pablo Galviz** - *Diseñador* - [Juan Pablo Galviz](https://github.com/jupa15)
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/haderrenteria13/project/contributors) quíenes han participado en este proyecto. 
 
