@@ -1,158 +1,370 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <!--Meta Tags-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Fin Meta Tags-->
-    <!--Descripcion-->
-    <title>ChillClass 📚 | Sobre Nosotros</title>
-    <link rel="shortcut icon" href="../assets/img/logo/Logo-colores.svg" type="image/x-icon">
-    <!--Fin Descripcion-->
-    <!--Links CSS-->
-    <link rel="stylesheet" href="../assets/styles/normalize.css">
-    <link rel="stylesheet" href="../assets/styles/styles.css">
-    <!--Fin Links CSS-->
-    <!--Links Bootstrap CSS-->
-    <link rel="stylesheet" href="../assets/libs/node_modules/bootstrap/dist/css/bootstrap.css">
-    <!--Fin Links Bootstrap CSS-->
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"/>
-    <!--Fin Google Fonts-->
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <!--Fin Font Awesome-->
+  <!--Meta Tags-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Fin Meta Tags-->
+  <!--Descripcion-->
+  <title>ChillClass 📚 | Salas de Estudio ✨ y Cursos 🚀</title>
+  <link rel="shortcut icon" href="../assets/img/logo/Logo-colores.svg" type="image/x-icon">
+  <!--Fin Descripcion-->
+  <!--Links CSS-->
+  <link rel="stylesheet" href="../assets/styles/normalize.css">
+  <link rel="stylesheet" href="../assets/styles/styles.css">
+  <!--Fin Links CSS-->
+  <!--Links Bootstrap CSS-->
+  <link rel="stylesheet" href="../assets/styles/bootstrap.css">
+  <!--Fin Links Bootstrap CSS-->
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!--Fin Google Fonts-->
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!--Fin Font Awesome-->
 </head>
+
 <body class="oscuro">
-    <!--Loader-->
-    <div class="page-loading active">
-        <div class="page-loading-inner">
-          <div class="page-spinner"></div>
-          <span>Cargando...</span>
+  <!--Loader-->
+  <div class="page-loading active">
+    <div class="page-loading-inner">
+      <div class="page-spinner"></div>
+      <span>Cargando...</span>
+    </div>
+  </div>
+  <!--Fin Loader-->
+
+  <!--Nav-->
+  <nav class="navbar sticky-top navbar-expand-lg oscuro shadow">
+    <div class="container">
+      <a class="navbar-brand" href="../src/index.html">
+        <img src="../assets/img/logo/Logo-colores.svg" alt="Bootstrap" width="85" height="85">
+      </a>
+      <!--Responsive Nav-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Fin Responsive Nav-->
+      <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNavAltMarkup">
+        <ul class="navbar-nav menu justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="../src/index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Foro
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Foros</a></li>
+              <li><a class="dropdown-item" href="#">Categorias</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Cursos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../src/cursos.html">Todos los Curso</a></li>
+              <li><a class="dropdown-item" href="../src/escuelas.html">Escuelas</a></li>
+              <li><a class="dropdown-item" href="#">Subir un Curso</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fw-bold me-1" href="../src/about.html">Sobre Nosotros</a>
+          </li>
+        </ul>
+        <a href="../src/login.html" class="btn btn-primary fw-bold">Inicia Sesión</a>
+      </div>
+    </div>
+  </nav>
+  <!--Fin Nav-->
+
+  <!--Que es ChillClass-->
+  <div class="container margin-login">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-lg-8 m-auto mt-4">
+            <h1 class="tx-blanco fw-900 text-center">
+              Hola a todos, Nosotros somos <span class="span-rosado fw-bold">ChillClass.</span>
+            </h1>
+            <p class="tx-blanco text-center m-0">
+              El proyecto se genera como una propuesta de mejoramiento dirigida al<strong class="tx-azul"> sector
+                educativo y a las personas que deseen aprender de manera autónoma</strong>. Este proyecto tiene como
+              finalidad principal hacer una página web para que los estudiantes puedan aprender y/o hacer sus
+              actividades
+              de manera más efectiva, brindando la posibilidad de visualizar cursos en los cuales podamos ayudar a
+              brindar
+              trabajos a aquellos que tengan una habilidad y/o conocimiento en una rama en específico. También ayudando
+              a
+              aquel estudiante que necesite concentración, Brindándole al estudiante salas con música y reloj pomodoro.
+            </p>
+          </div>
         </div>
       </div>
-    <!--Fin Loader-->
+    </div>
+    <br>
+    <br>
+  </div>
+  <!--Fin Que es ChillClass-->
 
-    <!--Nav-->
-    <nav class="navbar sticky-top navbar-expand-lg oscuro shadow justify-content-between">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="../assets/img/logo/Logo-colores.svg" alt="Bootstrap" width="85" height="85">
-        </a>
-      <!--Responsive Nav-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-      <!--Fin Responsive Nav-->
-        <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarNavAltMarkup">
-          <ul class="navbar-nav menu text-center">
-            <li class="nav-item dropdown">
-              <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Foro
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Foros</a></li>
-                <li><a class="dropdown-item" href="#">Categorias</a></li>
-              </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Cursos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../src/cursos.html">Todos los Curso</a></li>
-                  <li><a class="dropdown-item" href="#">Escuelas</a></li>
-                  <li><a class="dropdown-item" href="#">Subir un Curso</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="../src/about.html">Sobre Nosotros</a>
-              </li>
-            </ul>
-          </div>
-          <a href="../src/login.html" class="btn btn-primary fw-bold">Inicia Sesión</a>
+  <!--Fotos-->
+  <main>
+    <div class="container">
+      <div class="row geeksui-img">
+        <div class="col-5 geeksui-col">
+          <img src="../assets/img/imagenes/grupo (2).jpg" class="rounded">
+        </div>
+        <div class="col-3 geeksui-col">
+          <img src="../assets/img/imagenes/grupo (3).JPG" class="rounded">
+        </div>
+        <div class="col-4 geeksui-col">
+          <img src="../assets/img/imagenes/grupo (4).JPG" class="rounded">
+        </div>
       </div>
-    </nav>
-    <!--Fin Nav-->
+      <div class="row geeksui-img my-2">
+        <div class="col-3 geeksui-col">
+          <img src="../assets/img/imagenes/grupo.JPG" class="rounded">
+        </div>
+        <div class="col-4 geeksui-col">
+          <img src="../assets/img/imagenes/grupo (6).JPG" class="rounded">
+        </div>
+        <div class="col-5 geeksui-col">
+          <img src="../assets/img/imagenes/grupo (5).JPG" class="rounded">
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--Fin Fotos-->
 
-    <!--Footer-->
-    <footer class="d-flex pt-5 pb-0 h-100 footer oscuro">
-      <div class="container align-self-center">
-        <div class="row mb-3">
-          <div class="col-lg-3 col-sm-6 my-4 logo-footer">
-            <img src="../assets/img/logo/Logo-colores.svg" alt="" />
-          </div>
+  <!--Linea-->
+  <div class="container">
+    <hr>
+  </div>
+  <!--Linea-->
 
-          <!--Columna 1-->
-          <div class="col-lg-3 col-sm-6 my-4">
-            <h5 class="fw-bold mb-3">Home</h5>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a href="" class="text-muted text-decoration-none">Sobre Nosotros</a>
-              </li>
-              <li class="mb-1">
-                <a href="" class="text-muted text-decoration-none">Contactanos</a>
-              </li>
-              <li class="mb-1">
-                <a href="" class="text-muted text-decoration-none">Sobre el Proyecto</a>
-              </li>
-              
-            </ul>
-          </div>
-          <!--Fin Columna 1-->
-
-          <!--Columna 2-->
-          <div class="col-lg-3 col-sm-6 my-4">
-            <h5 class="fw-bold mb-3">Documentación</h5>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a href="https://docs.google.com/document/d/1sqLwSy_Q5eLTpqxP39eaf5vfEv-BDRwEl8VjLPTVrk0/edit?usp=sharing" class="text-muted text-decoration-none">Ir a Documentación</a>
-              </li>
-            </ul>
-          </div>
-          <!--Fin Columna 2-->
-
-          <!--Columna 3-->
-          <div class="col-lg-3 col-sm-6 my-4">
-            <h5 class="fw-bold mb-3">Contactanos</h5>
-            <div class="social-container">
-              <a href="https://github.com/haderrenteria13/ChillClass" class="social-link"></a>
-              <a href="https://www.instagram.com/hader_renteria/"
-                class="social-link"></a>
-              <a href="mailto:chillclass3@gmail.com"
-                class="social-link"></a>
+  <!--Informacion-->
+  <section class="d-flex py-5">
+    <div class="container align-self-center">
+      <div class="rosado shadow rounded">
+        <div class="row">
+          <div class="col-lg-7 d-flex">
+            <div class="align-self-center p-5">
+              <h1 class=" fw-bold mb-4 tx-blanco">¿Por que decidimos crearlo?</h1>
+              <p class="tx-blanco mb-4">Este proyecto podría ayudar y cambiar la educación de los niños, adolescentes y
+                jóvenes, convirtiéndola en una educación menos monótona y agobiante sin afectar el aprendizaje y los
+                conocimientos.</p>
+              <a href="#" class="btn btn-dark fw-bold">Abre tu cuenta hoy</a>
             </div>
           </div>
-          <!--Fin Columna 3-->
+          <div class="col-lg-5 d-flex">
+            <div class="align-self-center text-center mx-auto p-5">
+              <img src="../assets/img/imagenes/feliz.png" class="img-fluid">
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <!--Fin Footer-->
+    </div>
+  </section>
+  <!--Fin Informacion-->
 
-    <!--JavaScript-->
-    <!--Fin JavaScript-->
-    <!--Bootstrap JavaScript-->
-    <script src="../assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <!--Fin Bootstrap JavaScript-->
+  <!--Linea-->
+  <div class="container">
+    <hr>
+  </div>
+  <!--Linea-->
 
-    <!--Logica Loader-->
-    <script>
-        (function () {
-          window.onload = function () {
-            const preloader = document.querySelector(".page-loading");
-            preloader.classList.remove("active");
-            setTimeout(function () {
-              preloader.remove();
-            }, 1000);
-          };
-        })();
-    </script>
-    <!--Fin Logica Loader-->
+  <!--Integrantes-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <!--Titulo-->
+          <div class="section-title">
+            <h2 class="fw-bold mb-4 mt-3 titulo-2 tx-blanco">
+              Nuestro <span class="span-azul">Equipo</span>
+            </h2>
+          </div>
+          <!-- Fin Titulo-->
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card oscuro rounded shadow mb-4 mb-lg-0">
+            <img src="../assets/img/imagenes/hader-renteria.png" class="card-img-top img-fluid rounded-top" alt="">
+            <div class="card-body d-flex justify-content-center align-items-center flex-column">
+              <a href="#" class="tx-blanco card-link m-0 p-0">Hader Renteria</a>
+              <p class="card-text tx-azul fw-bold m-0 p-0 fs-14">FullStack Developer</p>
+              <div class="d-flex align-items-center justify-content-center mt-3">
+                <a href="https://github.com/haderrenteria13"><i
+                    class="fab fa-github me-2 tx-azul hover-azul fs-5"></i></a>
+                <a href="https://www.instagram.com/hader_renteria/"><i
+                    class="fab fa-instagram me-2 tx-azul hover-azul fs-5"></i></a>
+                <a href="https://www.linkedin.com/in/hader-renteria-565119240/"><i
+                    class="fab fa-linkedin tx-azul hover-azul fs-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card  oscuro rounded shadow mb-4 mb-lg-0">
+            <img src="../assets/img/imagenes/diaz.png" class="card-img-top img-fluid rounded-top" alt="">
+            <div class="card-body d-flex justify-content-center align-items-center flex-column">
+              <a href="#" class="tx-blanco card-link m-0 p-0">Juan J. Diaz</a>
+              <p class="card-text tx-azul fw-bold m-0 p-0 fs-14">Backend Developer</p>
+              <div class="d-flex align-items-center justify-content-center mt-3">
+                <a href=""><i class="fab fa-github me-2 tx-azul fs-5 "></i></a>
+                <a href=""><i class="fab fa-instagram me-2 tx-azul fs-5"></i></a>
+                <a href=""><i class="fab fa-linkedin tx-azul fs-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card oscuro rounded shadow mb-4 mb-lg-0">
+            <img src="../assets/img/imagenes/pablo-mejia.png" class="card-img-top rounded-top" alt="">
+            <div class="card-body d-flex justify-content-center align-items-center flex-column">
+              <a href="#" class="tx-blanco card-link m-0 p-0">Juan P. Mejia</a>
+              <p class="card-text tx-azul fw-bold m-0 p-0 fs-14">Frontend Developer</p>
+              <div class="d-flex align-items-center justify-content-center mt-3">
+                <a href=""><i class="fab fa-github me-2 tx-azul fs-5"></i></a>
+                <a href=""><i class="fab fa-instagram me-2 tx-azul fs-5"></i></a>
+                <a href=""><i class="fab fa-linkedin tx-azul fs-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--Integrantes-->
+
+  <!--Linea-->
+  <div class="container">
+    <hr>
+  </div>
+  <!--Linea-->
+
+  <!--Informacion-->
+  <section class="d-flex py-5">
+    <div class="container align-self-center">
+      <div class="azul shadow rounded">
+        <div class="row">
+
+          <div class="col-lg-5 d-flex">
+            <div class="align-self-center text-center mx-auto p-5">
+              <img src="../assets/img/imagenes/numero-1.png" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-7 d-flex">
+            <div class="align-self-center p-5">
+              <h1 class=" fw-bold mb-4 tx-blanco">¿Quienes somos?</h1>
+              <p class="tx-blanco">Somos Hader, Pablo y Diaz. Tres amigos que se unieron para realizar un proyecto
+                de tecnica. Su objetivo es en ser el mejor proyecto de Media Tecnica en el colegio y el Sena.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fin Informacion-->
+
+  <!--Linea-->
+  <div class="container">
+    <hr>
+  </div>
+  <!--Linea-->
+
+  <!--Footer-->
+  <footer class="d-flex pt-5 pb-0 h-100 footer oscuro">
+    <div class="container align-self-center">
+      <div class="row mb-3">
+        <div class="col-lg-3 col-sm-6 my-4 logo-footer">
+          <img src="../assets/img/logo/Logo-colores.svg" alt="" />
+        </div>
+
+        <!--Columna 1-->
+        <div class="col-lg-3 col-sm-6 my-4">
+          <h5 class="fw-bold mb-3">Home</h5>
+          <ul class="list-unstyled">
+            <li class="mb-1">
+              <a href="" class="text-muted text-decoration-none">Sobre Nosotros</a>
+            </li>
+            <li class="mb-1">
+              <a href="" class="text-muted text-decoration-none">Contactanos</a>
+            </li>
+            <li class="mb-1">
+              <a href="" class="text-muted text-decoration-none">Sobre el Proyecto</a>
+            </li>
+
+          </ul>
+        </div>
+        <!--Fin Columna 1-->
+
+        <!--Columna 2-->
+        <div class="col-lg-3 col-sm-6 my-4">
+          <h5 class="fw-bold mb-3">Documentación</h5>
+          <ul class="list-unstyled">
+            <li class="mb-1">
+              <a href="https://docs.google.com/document/d/1sqLwSy_Q5eLTpqxP39eaf5vfEv-BDRwEl8VjLPTVrk0/edit?usp=sharing"
+                class="text-muted text-decoration-none">Ir a Documentación</a>
+            </li>
+          </ul>
+        </div>
+        <!--Fin Columna 2-->
+
+        <!--Columna 3-->
+        <div class="col-lg-3 col-sm-6 my-4">
+          <h5 class="fw-bold mb-3">Contactanos</h5>
+          <div class="social-container">
+            <a href="https://github.com/haderrenteria13/ChillClass" class="social-link"></a>
+            <a href="https://www.instagram.com/hader_renteria/" class="social-link"></a>
+            <a href="mailto:chillclass3@gmail.com" class="social-link"></a>
+          </div>
+        </div>
+        <!--Fin Columna 3-->
+      </div>
+    </div>
+  </footer>
+  <!--Fin Footer-->
+
+  <!--JavaScript-->
+  <!--Fin JavaScript-->
+  <!--Bootstrap JavaScript-->
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <!--Fin Bootstrap JavaScript-->
+
+  <!--Logica Loader-->
+  <script>
+    (function () {
+      window.onload = function () {
+        const preloader = document.querySelector(".page-loading");
+        preloader.classList.remove("active");
+        setTimeout(function () {
+          preloader.remove();
+        }, 1000);
+      };
+    })();
+  </script>
+  <!--Fin Logica Loader-->
 </body>
+
 </html>

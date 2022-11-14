@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!--Meta Tags-->
     <meta charset="UTF-8">
@@ -7,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Fin Meta Tags-->
     <!--Descripcion-->
-    <title>ChillClass 📚 | Curso Bootstrap</title>
+    <title>ChillClass 📚 | Salas de Estudio ✨ y Cursos 🚀</title>
     <link rel="shortcut icon" href="../assets/img/logo/Logo-colores.svg" type="image/x-icon">
     <!--Fin Descripcion-->
     <!--Links CSS-->
@@ -15,68 +16,78 @@
     <link rel="stylesheet" href="../assets/styles/styles.css">
     <!--Fin Links CSS-->
     <!--Links Bootstrap CSS-->
-    <link rel="stylesheet" href="../assets/libs/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/styles/bootstrap.css">
     <!--Fin Links Bootstrap CSS-->
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
     <!--Fin Google Fonts-->
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!--Fin Font Awesome-->
 </head>
+
 <body class="oscuro">
     <!--Loader-->
     <div class="page-loading active">
         <div class="page-loading-inner">
-          <div class="page-spinner"></div>
-          <span>Cargando...</span>
+            <div class="page-spinner"></div>
+            <span>Cargando...</span>
         </div>
-      </div>
+    </div>
     <!--Fin Loader-->
 
     <!--Nav-->
-    <nav class="navbar sticky-top navbar-expand-lg oscuro shadow justify-content-between">
+    <nav class="navbar sticky-top navbar-expand-lg oscuro shadow">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="../assets/img/logo/Logo-colores.svg" alt="Bootstrap" width="85" height="85">
-          </a>
-        <!--Responsive Nav-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-        <!--Fin Responsive Nav-->
-          <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarNavAltMarkup">
-            <ul class="navbar-nav menu text-center">
-              <li class="nav-item dropdown">
-                <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Foro
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Foros</a></li>
-                  <li><a class="dropdown-item" href="#">Categorias</a></li>
+            <a class="navbar-brand" href="../src/index.html">
+                <img src="../assets/img/logo/Logo-colores.svg" alt="Bootstrap" width="85" height="85">
+            </a>
+            <!--Responsive Nav-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Fin Responsive Nav-->
+            <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNavAltMarkup">
+                <ul class="navbar-nav menu justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="../src/index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Foro
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Foros</a></li>
+                            <li><a class="dropdown-item" href="#">Categorias</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cursos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../src/cursos.html">Todos los Curso</a></li>
+                            <li><a class="dropdown-item" href="../src/escuelas.html">Escuelas</a></li>
+                            <li><a class="dropdown-item" href="#">Subir un Curso</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold me-1" href="../src/about.html">Sobre Nosotros</a>
+                    </li>
                 </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Cursos
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../src/cursos.html">Todos los Curso</a></li>
-                    <li><a class="dropdown-item" href="#">Escuelas</a></li>
-                    <li><a class="dropdown-item" href="#">Subir un Curso</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link fw-bold" href="../src/about.html">Sobre Nosotros</a>
-                </li>
-              </ul>
+                <a href="../src/login.html" class="btn btn-primary fw-bold">Inicia Sesión</a>
             </div>
-            <a href="../src/login.html" class="btn btn-primary fw-bold">Inicia Sesión</a>
         </div>
     </nav>
     <!--Fin Nav-->
@@ -87,7 +98,8 @@
             <div class="row py-5">
                 <div class="col-lg-6" style="margin-bottom: 50px;">
                     <h1 class="text-light fw-bold">Bootstrap Basico v5</h1>
-                    <p class="text-light fs-20 my-3">Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web.</p>
+                    <p class="text-light fs-20 my-3">Bootstrap es una biblioteca multiplataforma o conjunto de
+                        herramientas de código abierto para diseño de sitios y aplicaciones web.</p>
                     <div class="d-flex align-items-center mt-2">
                         <div class="d-flex align-items-center ml-3">
                             <i class="fa fa-user fa-xs text-light me-1"></i>
@@ -107,8 +119,8 @@
     <main>
         <div class="container">
             <div class="row align-items-start">
-            <!--1 Columna-->
-            <div class="col-lg-7 mr-auto me-5" style="margin-top: -55px;">
+                <!--1 Columna-->
+                <div class="col-lg-7 mr-auto me-5" style="margin-top: -55px;">
                     <div class="card oscuro rounded shadow">
                         <div class="card-body pt-2">
                             <section id="fragment">
@@ -132,15 +144,15 @@
                                         </button>
                                     </li>
                                     <li class="nav-item">
-                                        <button id="btn-faq" class="btn btn-fragment tx-blanco fw-bold px-0 pb-3 rounded-0">
+                                        <button id="btn-faq"
+                                            class="btn btn-fragment tx-blanco fw-bold px-0 pb-3 rounded-0">
                                             Preguntas
                                         </button>
                                     </li>
                                 </ul>
                             </section>
                             <div id="accordion" class="d-block">
-                                <a href="#accordion-1"
-                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
+                                <a href="#accordion-1" class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Introduction JavaScript
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
@@ -166,8 +178,7 @@
                                     </a>
                                 </div>
 
-                                <a href="#accordion-2"
-                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
+                                <a href="#accordion-2" class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     JavaScript Beginning
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
@@ -223,8 +234,7 @@
                                     </a>
                                 </div>
 
-                                <a href="#accordion-3"
-                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
+                                <a href="#accordion-3" class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Variables and Constants
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
@@ -292,8 +302,7 @@
                                     </a>
                                 </div>
 
-                                <a href="#accordion-4"
-                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
+                                <a href="#accordion-4" class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Types and Operators
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
@@ -349,8 +358,7 @@
                                     </a>
                                 </div>
 
-                                <a href="#accordion-5"
-                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
+                                <a href="#accordion-5" class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Program Flow
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
@@ -424,8 +432,7 @@
                                     </a>
                                 </div>
 
-                                <a href="#accordion-6"
-                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
+                                <a href="#accordion-6" class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Functions
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
@@ -481,8 +488,7 @@
                                     </a>
                                 </div>
 
-                                <a href="#accordion-7"
-                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
+                                <a href="#accordion-7" class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Objects and the DOM
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
@@ -550,8 +556,7 @@
                                     </a>
                                 </div>
 
-                                <a href="#accordion-8"
-                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
+                                <a href="#accordion-8" class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Arrays
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
@@ -607,8 +612,7 @@
                                     </a>
                                 </div>
 
-                                <a href="#accordion-9"
-                                    class="d-flex align-items-center tx-blanco fs-16 py-3"
+                                <a href="#accordion-9" class="d-flex align-items-center tx-blanco fs-16 py-3"
                                     data-toggle="collapse">
                                     Scope and Hoisting
                                     <i class="fas fa-chevron-down fa-xs ml-auto"></i>
@@ -984,11 +988,11 @@
                             </div>
                         </div>
                     </div>
-            </div>
-            <!--Fin 1 Columna-->
+                </div>
+                <!--Fin 1 Columna-->
 
-            <!--2 Columna-->
-            <div class="col-lg-4 ml-auto ms-3" style="margin-top: -180px;">
+                <!--2 Columna-->
+                <div class="col-lg-4 ml-auto ms-3" style="margin-top: -180px;">
                     <!--Card Producto-->
                     <div class="card oscuro shadow rounded mb-4 h-100">
                         <img src="../assets/img/imagenes/Cursos/course-bootstrap.jpg" class="card-img-top rounded p-1">
@@ -1000,7 +1004,8 @@
                     <!--Fin Card Producto-->
                     <div class="card oscuro shadow rounded mb-4">
                         <div class="card-header d-flex align-items-center">
-                            <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="70" alt="">
+                            <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="70"
+                                alt="">
                             <div class="ml-3">
                                 <h6 class="tx-blanco fw-bold m-0 p-0">Hader Renteria</h6>
                                 <p class="text-muted m-0 p-0 mb-2">Front-end Developer, Diseñador</p>
@@ -1010,195 +1015,229 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text text-muted fs-14 ">
-                                Soy un estudiante de grado 10, Hace unos años empecé a adquirir conocimiento en diseño de marca y creación de contenido audiovisual como un hobby. En el presente año vengo aprendiendo desarrollo web en la institución educativa asamblea departamental en convenio con el SENA. Me gustaria en un futuro tener un titulo.
+                                Soy un estudiante de grado 10, Hace unos años empecé a adquirir conocimiento en diseño
+                                de marca y creación de contenido audiovisual como un hobby. En el presente año vengo
+                                aprendiendo desarrollo web en la institución educativa asamblea departamental en
+                                convenio con el SENA. Me gustaria en un futuro tener un titulo.
                             </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--Fin 2 Columna-->
+                <!--Fin 2 Columna-->
 
-            <!--Linea-->
-            <div class="container">
-            <hr>
-            </div>
-            <!--Linea-->
-
-            <!--Section Recomendados-->
-            <section class="oscuro">
+                <!--Linea-->
                 <div class="container">
-                  <div class="row">
-                    <div class="col-lg-8">
-                      <!--Titulo-->
-                      <div class="section-title">
-                        <h2 class="fw-bold mb-4 mt-3 titulo-2 tx-blanco">
-                          Cursos <span class="span-rosado">Recomendados</span>
-                        </h2>
-                      </div>
-                      <!-- Fin Titulo-->
-                    </div>
-                  </div>
-          
-                  <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
-                            <a href="#">
-                                <img src="../assets/img/imagenes/Cursos/course-python.jpg" class="card-img-top rounded-top" alt="">
-                            </a>
-                            <div class="card-body">
-                                <a href="#" class="tx-blanco card-title d-block fs-16">Curso Practico de Python</a>
-                                <p class="text-muted fs-14">
-                                    <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
-                                </p>
-                                <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
-                            </div>
-                            <div class="card-footer d-flex align-items-center">
-                                <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
-                                <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                    <hr>
+                </div>
+                <!--Linea-->
+
+                <!--Section Recomendados-->
+                <section class="oscuro">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <!--Titulo-->
+                                <div class="section-title">
+                                    <h2 class="fw-bold mb-4 mt-3 titulo-2 tx-blanco">
+                                        Cursos <span class="span-rosado">Recomendados</span>
+                                    </h2>
+                                </div>
+                                <!-- Fin Titulo-->
                             </div>
                         </div>
+
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
+                                    <a href="#">
+                                        <img src="../assets/img/imagenes/Cursos/course-python.jpg"
+                                            class="card-img-top rounded-top" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="#" class="tx-blanco card-title d-block fs-16">Curso Practico de
+                                            Python</a>
+                                        <p class="text-muted fs-14">
+                                            <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span
+                                                class="tx-rosado">Basico</span>
+                                        </p>
+                                        <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0"
+                                            style="color: orange !important;">4.5&nbsp;<span
+                                                class="text-muted"><small>(0,000)</small><span></p>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center">
+                                        <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2"
+                                            width="24" alt="">
+                                        <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
+                                    <a href="#">
+                                        <img src="../assets/img/imagenes/Cursos/course-angular.jpg"
+                                            class="card-img-top rounded-top" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de
+                                            Angular</a>
+                                        <p class="text-muted fs-14">
+                                            <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span
+                                                class="tx-rosado">Basico</span>
+                                        </p>
+                                        <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0"
+                                            style="color: orange !important;">4.5&nbsp;<span
+                                                class="text-muted"><small>(0,000)</small><span></p>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center">
+                                        <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2"
+                                            width="24" alt="">
+                                        <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
+                                    <a href="#">
+                                        <img src="../assets/img/imagenes/Cursos/course-react.jpg"
+                                            class="card-img-top rounded-top" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="#" class="tx-blanco card-title d-block fs-16">Curso de Incio de
+                                            React</a>
+                                        <p class="text-muted fs-14">
+                                            <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span
+                                                class="tx-rosado">Basico</span>
+                                        </p>
+                                        <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0"
+                                            style="color: orange !important;">4.5&nbsp;<span
+                                                class="text-muted"><small>(0,000)</small><span></p>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center">
+                                        <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2"
+                                            width="24" alt="">
+                                        <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
+                                    <a href="#">
+                                        <img src="../assets/img/imagenes/Cursos/course-node.jpg"
+                                            class="card-img-top rounded-top" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="#" class="tx-blanco card-title d-block fs-16">Curso Avanzado de Node
+                                            JS</a>
+                                        <p class="text-muted fs-14">
+                                            <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span
+                                                class="tx-rosado">Basico</span>
+                                        </p>
+                                        <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0"
+                                            style="color: orange !important;">4.5&nbsp;<span
+                                                class="text-muted"><small>(0,000)</small><span></p>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center">
+                                        <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2"
+                                            width="24" alt="">
+                                        <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-          
-                  <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
-                        <a href="#">
-                            <img src="../assets/img/imagenes/Cursos/course-angular.jpg" class="card-img-top rounded-top" alt="">
-                        </a>
-                        <div class="card-body">
-                            <a href="#" class="tx-blanco card-title d-block fs-16">Curso Basico de Angular</a>
-                            <p class="text-muted fs-14">
-                                <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
-                            </p>
-                            <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
-                        </div>
-                        <div class="card-footer d-flex align-items-center">
-                            <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
-                            <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
+                        <div class="text-center mt-4 mb-4">
+                            <a href="../src/cursos.html" class="btn btn-primary fw-bold tx-oscuro">Ver todos los Cursos
+                                →</a>
                         </div>
                     </div>
-                </div>
-          
-                  <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
-                        <a href="#">
-                            <img src="../assets/img/imagenes/Cursos/course-react.jpg" class="card-img-top rounded-top" alt="">
-                        </a>
-                        <div class="card-body">
-                            <a href="#" class="tx-blanco card-title d-block fs-16">Curso de Incio de React</a>
-                            <p class="text-muted fs-14">
-                                <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
-                            </p>
-                            <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
-                        </div>
-                        <div class="card-footer d-flex align-items-center">
-                            <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
-                            <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
-                        </div>
-                    </div>
-                </div>
-          
-                  <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card h-100 oscuro rounded shadow mb-4 mb-lg-0">
-                        <a href="#">
-                            <img src="../assets/img/imagenes/Cursos/course-node.jpg" class="card-img-top rounded-top" alt="">
-                        </a>
-                        <div class="card-body">
-                            <a href="#" class="tx-blanco card-title d-block fs-16">Curso Avanzado de Node JS</a>
-                            <p class="text-muted fs-14">
-                                <i class="fas fa-clock"></i>&nbsp;3h 56m&nbsp;&nbsp;&nbsp;<span class="tx-rosado">Basico</span>
-                            </p>
-                            <p class="d-flex align-items-center text-muted fs-14 mb-0 mb-0" style="color: orange !important;">4.5&nbsp;<span class="text-muted"><small>(0,000)</small><span></p>
-                        </div>
-                        <div class="card-footer d-flex align-items-center">
-                            <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="24" alt="">
-                            <span class="text-muted fs-14 ml-2 fw-bold">Hader Renteria</span>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              <div class="text-center mt-4 mb-4">
-                <a href="../src/cursos.html" class="btn btn-primary fw-bold tx-oscuro">Ver todos los Cursos →</a>
-              </div>
-               </div>
-            </section>
-            <!--Section Recomendados-->
-        </div>
+                </section>
+                <!--Section Recomendados-->
+            </div>
     </main>
     <!--Fin Detalle Curso-->
+
+    <!--Linea-->
+    <div class="container">
+        <hr>
+    </div>
+    <!--Linea-->
 
     <!--Footer-->
     <footer class="d-flex pt-5 pb-0 h-100 footer oscuro">
         <div class="container align-self-center">
-          <div class="row mb-3">
-            <div class="col-lg-3 col-sm-6 my-4 logo-footer">
-              <img src="../assets/img/logo/Logo-colores.svg" alt="" />
+            <div class="row mb-3">
+                <div class="col-lg-3 col-sm-6 my-4 logo-footer">
+                    <img src="../assets/img/logo/Logo-colores.svg" alt="" />
+                </div>
+
+                <!--Columna 1-->
+                <div class="col-lg-3 col-sm-6 my-4">
+                    <h5 class="fw-bold mb-3">Home</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1">
+                            <a href="" class="text-muted text-decoration-none">Sobre Nosotros</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="" class="text-muted text-decoration-none">Contactanos</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="" class="text-muted text-decoration-none">Sobre el Proyecto</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Fin Columna 1-->
+
+                <!--Columna 2-->
+                <div class="col-lg-3 col-sm-6 my-4">
+                    <h5 class="fw-bold mb-3">Documentación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1">
+                            <a href="https://docs.google.com/document/d/1sqLwSy_Q5eLTpqxP39eaf5vfEv-BDRwEl8VjLPTVrk0/edit?usp=sharing"
+                                class="text-muted text-decoration-none">Ir a Documentación</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Fin Columna 2-->
+
+                <!--Columna 3-->
+                <div class="col-lg-3 col-sm-6 my-4">
+                    <h5 class="fw-bold mb-3">Contactanos</h5>
+                    <div class="social-container">
+                        <a href="https://github.com/haderrenteria13/ChillClass" class="social-link"></a>
+                        <a href="https://www.instagram.com/hader_renteria/" class="social-link"></a>
+                        <a href="mailto:chillclass3@gmail.com" class="social-link"></a>
+                    </div>
+                </div>
+                <!--Fin Columna 3-->
             </div>
-  
-            <!--Columna 1-->
-            <div class="col-lg-3 col-sm-6 my-4">
-              <h5 class="fw-bold mb-3">Home</h5>
-              <ul class="list-unstyled">
-                <li class="mb-1">
-                  <a href="" class="text-muted text-decoration-none">Sobre Nosotros</a>
-                </li>
-                <li class="mb-1">
-                  <a href="" class="text-muted text-decoration-none">Contactanos</a>
-                </li>
-                <li class="mb-1">
-                  <a href="" class="text-muted text-decoration-none">Sobre el Proyecto</a>
-                </li>
-                
-              </ul>
-            </div>
-            <!--Fin Columna 1-->
-  
-            <!--Columna 2-->
-            <div class="col-lg-3 col-sm-6 my-4">
-              <h5 class="fw-bold mb-3">Documentación</h5>
-              <ul class="list-unstyled">
-                <li class="mb-1">
-                  <a href="https://docs.google.com/document/d/1sqLwSy_Q5eLTpqxP39eaf5vfEv-BDRwEl8VjLPTVrk0/edit?usp=sharing" class="text-muted text-decoration-none">Ir a Documentación</a>
-                </li>
-              </ul>
-            </div>
-            <!--Fin Columna 2-->
-  
-            <!--Columna 3-->
-            <div class="col-lg-3 col-sm-6 my-4">
-              <h5 class="fw-bold mb-3">Contactanos</h5>
-              <div class="social-container">
-                <a href="https://github.com/haderrenteria13/ChillClass" class="social-link"></a>
-                <a href="https://www.instagram.com/hader_renteria/"
-                  class="social-link"></a>
-                <a href="mailto:chillclass3@gmail.com"
-                  class="social-link"></a>
-              </div>
-            </div>
-            <!--Fin Columna 3-->
-          </div>
         </div>
     </footer>
     <!--Fin Footer-->
 
     <!--JavaScript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="../assets/scrips/main.js"></script>
+    <script src="../assets/js/main.js "></script>
     <!--Fin JavaScript-->
     <!--Bootstrap JavaScript-->
-    <script src="../assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <!--Fin Bootstrap JavaScript-->
 
     <!--Logica Loader-->
     <script>
         (function () {
-          window.onload = function () {
-            const preloader = document.querySelector(".page-loading");
-            preloader.classList.remove("active");
-            setTimeout(function () {
-              preloader.remove();
-            }, 1000);
-          };
+            window.onload = function () {
+                const preloader = document.querySelector(".page-loading");
+                preloader.classList.remove("active");
+                setTimeout(function () {
+                    preloader.remove();
+                }, 1000);
+            };
         })();
     </script>
     <!--Fin Logica Loader-->
 </body>
+
 </html>
