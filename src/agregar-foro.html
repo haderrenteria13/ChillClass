@@ -93,29 +93,54 @@
     <!--Section Titulo-->
     <section class="p-5 azul">
         <div class="container">
-            <div class="d-flex align-items-end" id="header-banner-profile">
-                <div class="rounded shadow me-3" id="header-banner-img">
-                    <img src="../assets/img/imagenes/Escuelas/matematicas.png" width="75" class="rounded">
+            <h1 class="tx-blanco fw-bold">Agrega tu propio Foro</h1>
+        </div>
+    </section>
+    <!--Fin Section Titulo-->
+
+    <!---->
+    <header class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 ">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label tx-blanco fw-bold">Titulo</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="El titulo del hilo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label tx-blanco fw-bold">Categoria</label>
+                        <select name="category" id="category" class="form-control text-muted ml-2 me-3">
+                        <option value="1">Categoria</option>
+                        <option value="2">Design</option>
+                        <option value="3">Development</option>
+                        <option value="4">Program</option>
+                    </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label tx-blanco fw-bold">Comentario</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Lo que vas a decir..."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label tx-blanco fw-bold">Archivo</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="d-grid mt-1">
+                        <a href="../src/foro.html" class="btn btn-secondary tx-oscuro fw-bold">Enviar</a>
+                    </div>
                 </div>
-                <div class="d-lg-flex align-items-center" id="header-banner-info">
-                    <div>
-                        <h1 class="tx-blanco fw-bold mb-0">Matematicas</h1>
-                        <p class="m-0">
-                            <span class="me-2 tx-blanco">
-                                <span>0</span>
-                                <span>estudiante</span>
-                            </span>
-                            <span class="tx-blanco">
-                                <span>0</span>
-                                <span>Cursos</span>
-                            </span>
-                        </p>
+                <div class="col-7">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="../assets/img/imagenes/feliz.png" alt="" class="img-fluid rounded" width="450px">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--Fin Section Titulo-->
+        
+    </header>
+
+    <!--  -->
 
     <!--Linea-->
     <div class="container">

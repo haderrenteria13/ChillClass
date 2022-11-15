@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!--Meta Tags-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Fin Meta Tags-->
+  <!--Descripcion-->
+  <title>ChillClass 📚 | Salas de Estudio ✨ y Cursos 🚀</title>
+  <link rel="shortcut icon" href="../assets/img/logo/Logo-colores.svg" type="image/x-icon">
+  <!--Fin Descripcion-->
+  <!--Links CSS-->
+  <link rel="stylesheet" href="../assets/styles/normalize.css">
+  <link rel="stylesheet" href="../assets/styles/styles.css">
+  <!--Fin Links CSS-->
+  <!--Links Bootstrap CSS-->
+  <link rel="stylesheet" href="../assets/styles/bootstrap.css">
+  <!--Fin Links Bootstrap CSS-->
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!--Fin Google Fonts-->
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!--Fin Font Awesome-->
+</head>
+
+<body class="oscuro">
+  <!--Loader-->
+  <div class="page-loading active">
+    <div class="page-loading-inner">
+      <div class="page-spinner"></div>
+      <span>Cargando...</span>
+    </div>
+  </div>
+  <!--Fin Loader-->
+
+  <!--Dashboard-->
+  <div class="d-flex" id="content-wrapper">
+
+    <!--Sidebar-->
+    <aside class="navbar sticky-bottom shadow d-flex flex-column flex-shrink-0 oscuro shadow">
+      <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip"
+        data-bs-placement="right" data-bs-original-title="Icon-only">
+        <img src="../assets/img/logo/Logo-colores.svg" alt="" height="50">
+        <span class="visually-hidden">Icon-only</span>
+      </a>
+      <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+        <li class="nav-item">
+          <a href="../src/dashboard.html" class="nav-link py-3" aria-current="page" title="" data-bs-toggle="tooltip"
+            data-bs-placement="right" data-bs-original-title="Home">
+            <i class="fa fa-home tx-rosado"></i>
+          </a>
+        </li>
+        <li>
+          <a href="../src/dashboard-tareas.html" class="nav-link py-3" title="" data-bs-toggle="tooltip"
+            data-bs-placement="right" data-bs-original-title="Dashboard">
+            <i class="fa fa-pencil tx-rosado"></i>
+          </a>
+        </li>
+        <li>
+          <a href="../src/dashboard-mensajes.html" class="nav-link py-3" title="" data-bs-toggle="tooltip"
+            data-bs-placement="right" data-bs-original-title="Dashboard">
+            <i class="fa fa-comment tx-rosado"></i>
+          </a>
+        </li>
+        <li>
+          <a href="../src/dashboard-mensajes.html" class="nav-link active py-3" title="" data-bs-toggle="tooltip"
+            data-bs-placement="right" data-bs-original-title="Dashboard">
+            <i class="fa fa-cog"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+            data-bs-original-title="Customers">
+            <svg class="bi" width="24" height="24" role="img" aria-label="Customers">
+              <use xlink:href="#people-circle"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!--Fin sidebar-->
+
+    <div class="w-100">
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light oscuro shadow">
+        <div class="container">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <div class="position-relative" style="min-width: 300px">
+              <input type="text" class="input-categorias shadow form-control pe-5" placeholder="Buscar algo" />
+              <i class="text-nav fs-lg position-absolute top-50 end-0 translate-middle-y me-3"><img
+                  src="../assets/img/iconos/lupa.svg" alt="" class="w-50" /></i>
+            </div>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item dropdown">
+                <div class="d-flex justify-content-center align-items-center">
+
+                  <div class="dropdown me-2">
+                    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="fa fa-bell tx-blanco"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end oscuro">
+                      <a href="#" class="d-flex align-items-start border-bottom p-3">
+                        <img src="../assets/img/imagenes/hader-renteria.png" class="rounded-circle me-2" width="36"
+                          alt="">
+                        <div class="dropdown-bell-body-text ml-3">
+                          <h6 class="tx-blanco fw-bold p-0 m-0">Hader Renteria</h6>
+                          <p class="text-muted p-0 m-0 mt-1">
+                            Entonces carabana!!!
+                          </p>
+                        </div>
+                      </a>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Juan P. Mejia
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end oscuro">
+                      <div class="d-flex align-items-center oscuro py-2 px-3">
+                        <img src="../assets/img/imagenes/pablo-mejia.png" class="rounded-circle me-2" width="36" alt="">
+                        <div class="dropdown-user-header-text ml-3">
+                          <h6 class="fw-500 m-0 p-0 tx-blanco">Juan P. Mejia</h6>
+                          <p class="text-muted fs-14 m-0 p-0">pablo@mejia.com</p>
+                        </div>
+                      </div>
+                      <li><a class="dropdown-item tx-blanco" href="#"><i class="fa fa-user" aria-hidden="true"></i>
+                          Perfil</a></li>
+                      <div class="container">
+                        <hr>
+                      </div>
+                      <li><a class="dropdown-item fw-bold text-danger" href="../src/index.html"><i
+                            class="fa fa-sign-out" aria-hidden="true"></i> Salir</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Fin Navbar-->
+
+      <!-- Page Content -->
+      <div id="content" class="oscuro w-100">
+
+        <!--Saludo-->
+        <section class="oscuro py-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 col-md-8">
+                <h1 class="fw-bold fs-3 mb-0 tx-blanco">Editar<span class="span-azul"> Perfil</span></h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Fin Saludo-->
+
+        <!--Curso Que Estas Realizando-->
+        <header class="bg-mix py-3">
+          <div class="container">
+            <div class="card oscuro border-0 rounded shadow bg-light">
+              <div style="width: 100%; height: 120px;" class="oscuro">
+                <img src="../assets/img/imagenes/fondo.png" class="rounded-top" style="width: 100% !important;
+                            height: 100% !important;
+                            object-fit: cover !important;
+                            object-position: top !important;">
+              </div>
+              <div class="card-body oscuro d-flex align-items-end" style="margin-top: -25px;">
+                <span>
+                  <img src="../assets/img/imagenes/pablo-mejia.png" width="82" class="rounded-circle me-2"
+                    style="border: 4px solid #fff !important;">
+                </span>
+                <span class="ml-3">
+                  <h4 class="card-title tx-blanco m-0 p-0 fw-bold">Juan P. Mejia</h4>
+                  <p class="text-muted fs-14 m-0 p-0">pablo@mejia.com</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!--  -->
+
+        <!---->
+        <section class="bg-mix py-3">
+          <div class="container">
+            <div class="col mt-4 mt-lg-0">
+              <div class="card oscuro rounded shadow p-2" style="overflow: auto !important;">
+                  <div class="card-header">
+                      <h5 class="card-title tx-blanco fw-bold m-0 p-0">Detalles de perfil</h5>
+                      <p class="card-text text-muted fs-14 m-0 p-0">
+                          Eres libre de editarlo a tu gusto.
+                      </p>
+                  </div>
+                  <div class="card-body">
+                      <div class="row">
+                          <div class="col-lg-6 mb-2">
+                              <div class="form-group">
+                                  <label for="first-name" class="tx-blanco fs-14">Primer Nombre</label>
+                                  <input type="text" name="first-name" id="first-name" class="form-control"
+                                      placeholder="Hader">
+                              </div>
+                          </div>
+                          <div class="col-lg-6 mb-2">
+                              <div class="form-group">
+                                  <label for="last-name" class="tx-blanco fs-14">Segundo Nombre</label>
+                                  <input type="text" name="last-name" id="last-name" class="form-control"
+                                      placeholder="Andres">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="address-line-1" class="tx-blanco fs-14">Apellido 1</label>
+                                  <input type="text" name="address-line-1" id="address-line-1"
+                                      class="form-control" placeholder="Palacios">
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="form-group">
+                                  <label for="address-line-2" class="tx-blanco fs-14">Apellido 2</label>
+                                  <input type="text" name="address-line-2" id="address-line-2"
+                                      class="form-control" placeholder="Renteria">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6 mt-3">
+                              <div class="form-group">
+                                  <button type="button" class="btn btn-primary">Actualizar Perfil</button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card-header">
+                      <h5 class="card-title tx-blanco fw-bold m-0 p-0">Actualizar Contraseña</h5>
+                      <p class="card-text text-muted fs-14 m-0 p-0">
+                          Tienes todo el decho a olvidar tu contraseña y actualizarla.
+                      </p>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 mb-2">
+                            <div class="form-group">
+                                <label for="first-name" class="tx-blanco fs-14">Contraseña Anterior</label>
+                                <input type="password" name="first-name" id="first-name" class="form-control"
+                                    placeholder="*******">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <div class="form-group">
+                                <label for="last-name" class="tx-blanco fs-14">Contraseña Nueva</label>
+                                <input type="password" name="last-name" id="last-name" class="form-control"
+                                    placeholder="*******">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mt-3">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary">Actualizar Contraseña</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div> 
+          </div>
+        </section>
+        <!--Curso Que Estas Realizando-->
+
+        <!--Linea-->
+        <div class="container">
+          <hr>
+        </div>
+        <!--Linea-->
+
+        <!--Footer-->
+        <footer class="d-flex pt-5 pb-0 h-100 footer oscuro">
+          <div class="container align-self-center">
+            <div class="row mb-3">
+              <div class="col-lg-3 col-sm-6 my-4 logo-footer">
+                <img src="../assets/img/logo/Logo-colores.svg" alt="" />
+              </div>
+
+              <!--Columna 1-->
+              <div class="col-lg-3 col-sm-6 my-4">
+                <h5 class="fw-bold mb-3">Home</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-1">
+                    <a href="" class="text-muted text-decoration-none">Sobre Nosotros</a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="" class="text-muted text-decoration-none">Contactanos</a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="" class="text-muted text-decoration-none">Sobre el Proyecto</a>
+                  </li>
+
+                </ul>
+              </div>
+              <!--Fin Columna 1-->
+
+              <!--Columna 2-->
+              <div class="col-lg-3 col-sm-6 my-4">
+                <h5 class="fw-bold mb-3">Documentación</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-1">
+                    <a href="https://docs.google.com/document/d/1sqLwSy_Q5eLTpqxP39eaf5vfEv-BDRwEl8VjLPTVrk0/edit?usp=sharing"
+                      class="text-muted text-decoration-none">Ir a Documentación</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Fin Columna 2-->
+
+              <!--Columna 3-->
+              <div class="col-lg-3 col-sm-6 my-4">
+                <h5 class="fw-bold mb-3">Contactanos</h5>
+                <div class="social-container">
+                  <a href="https://github.com/haderrenteria13/ChillClass" class="social-link"></a>
+                  <a href="https://www.instagram.com/hader_renteria/" class="social-link"></a>
+                  <a href="mailto:chillclass3@gmail.com" class="social-link"></a>
+                </div>
+              </div>
+              <!--Fin Columna 3-->
+            </div>
+          </div>
+        </footer>
+        <!--Fin Footer-->
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--Fin Dashboard-->
+
+
+
+  <!--JavaScript-->
+  <!--Fin JavaScript-->
+  <!--Bootstrap JavaScript-->
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <!--Fin Bootstrap JavaScript-->
+
+  <!--Logica Loader-->
+  <script>
+    (function () {
+      window.onload = function () {
+        const preloader = document.querySelector(".page-loading");
+        preloader.classList.remove("active");
+        setTimeout(function () {
+          preloader.remove();
+        }, 1000);
+      };
+    })();
+  </script>
+  <!--Fin Logica Loader-->
+</body>
+
+</html>
